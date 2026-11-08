@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sphere Dependency Tracker</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1 id="title">Loading…</h1>
+      <div class="sub" id="subtitle"></div>
+    </div>
+    <div class="top-actions">
+      <span id="admin-badge" class="badge admin" hidden>Admin view: shows spoilers</span>
+      <span id="refreshed" class="muted"></span>
+      <button id="refresh-btn" type="button">Refresh now</button>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <main id="main" hidden>
+    <section class="summary" id="summary"></section>
+
+    <section>
+      <div class="section-head">
+        <h2>Players</h2>
+        <div class="filters">
+          <input id="player-search" type="search" placeholder="Filter player / game">
+          <span id="state-filters" class="chips"></span>
+          <details class="menu" id="col-menu">
+            <summary>Columns</summary>
+            <div class="menu-body" id="col-toggles"></div>
+          </details>
+          <button type="button" id="preset-shot" title="Show only Player, Status, In logic and Last active">Screenshot view</button>
+          <button type="button" id="copy-img" title="Copy the players table as an image">Copy as image</button>
+        </div>
+      </div>
+      <div class="table-wrap" id="players-capture">
+        <table class="players">
+          <thead><tr id="players-head"></tr></thead>
+          <tbody id="players"></tbody>
+        </table>
+      </div>
+      <p class="muted small" id="players-note"></p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Hints</h2>
+        <div class="filters">
+          <select id="hint-player"><option value="">All players</option></select>
+          <input id="hint-search" type="search" placeholder="Search item / location">
+          <label><input id="hint-found" type="checkbox"> Show found</label>
+        </div>
+      </div>
+      <p class="muted small">
+        For each unfound hint, the tracker works out what the <em>finder</em> still needs before that location is in logic.
+        Needed items that have already been hinted are tagged.
+      </p>
+      <div id="hints"></div>
+    </section>
+
+    <section id="spheres-section">
+      <h2>Spheres</h2>
+      <p class="muted small">Progress through the spoiler playthrough. The earliest unfinished spheres usually hold the run up.</p>
+      <div id="spheres"></div>
+    </section>
+  </main>
+
+  <script src="/static/room.js"></script>
+</body>
+</html>

@@ -1,0 +1,7668 @@
+{
+ "games": {
+  "Celeste (Open World)": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "binosanity": {
+     "true": "banned"
+    },
+    "carsanity": {
+     "true": "banned"
+    },
+    "checkpointsanity": {
+     "true": "banned"
+    },
+    "death_link": {
+     "false": "banned"
+    },
+    "gemsanity": {
+     "true": "banned"
+    },
+    "goal_area": {
+     "empty_space": "banned"
+    },
+    "goal_area_checkpointsanity": {
+     "false": "banned"
+    },
+    "include_b_sides": {
+     "true": "banned"
+    },
+    "include_c_sides": {
+     "true": "banned"
+    },
+    "include_core": {
+     "true": "banned"
+    },
+    "include_farewell": {
+     "empty_space": "banned"
+    },
+    "include_goldens": {
+     "false": "banned"
+    },
+    "junk_fill_percentage": {
+     "middle": "banned"
+    },
+    "keysanity": {
+     "true": "banned"
+    },
+    "lock_goal_area": {
+     "true": "banned"
+    },
+    "madeline_feather_hair_color": {
+     "golden": "banned"
+    },
+    "madeline_hair_length": {
+     "default": "banned"
+    },
+    "madeline_no_dash_hair_color": {
+     "empty": "banned"
+    },
+    "madeline_one_dash_hair_color": {
+     "strawberry": "banned"
+    },
+    "madeline_two_dash_hair_color": {
+     "double": "banned"
+    },
+    "music_shuffle": {
+     "none": "banned"
+    },
+    "require_cassettes": {
+     "false": "banned"
+    },
+    "roomsanity": {
+     "true": "banned"
+    },
+    "strawberries_required_percentage": {
+     "top": "banned"
+    },
+    "total_strawberries": {
+     "bottom": "banned"
+    },
+    "trap_fill_percentage": {
+     "min": "banned"
+    },
+    "trap_link": {
+     "false": "banned"
+    }
+   },
+   "options": {
+    "bald_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "binosanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "carsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "checkpointsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link_amnesty": {
+     "aliases": {},
+     "default": "10",
+     "high": 30,
+     "kind": "range",
+     "low": 1
+    },
+    "fast_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "gemsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "goal_area": {
+     "default": "the_summit_a",
+     "kind": "choice",
+     "values": [
+      "the_summit_a",
+      "the_summit_b",
+      "the_summit_c",
+      "core_a",
+      "core_b",
+      "core_c",
+      "empty_space",
+      "farewell",
+      "farewell_golden"
+     ]
+    },
+    "goal_area_checkpointsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "hiccup_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "ice_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "include_b_sides": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_c_sides": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_core": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_farewell": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "empty_space",
+      "farewell"
+     ]
+    },
+    "include_goldens": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "invisible_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "junk_fill_percentage": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "keysanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "laughter_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "literature_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "lock_goal_area": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "madeline_feather_hair_color": {
+     "default": "golden",
+     "kind": "choice",
+     "values": [
+      "strawberry",
+      "empty",
+      "double",
+      "golden",
+      "baddy",
+      "fire_red",
+      "maroon",
+      "salmon",
+      "orange",
+      "lime_green",
+      "bright_green",
+      "forest_green",
+      "royal_blue",
+      "brown",
+      "black",
+      "white",
+      "grey",
+      "any_color"
+     ]
+    },
+    "madeline_hair_length": {
+     "default": "default",
+     "kind": "choice",
+     "values": [
+      "very_short",
+      "short",
+      "default",
+      "long",
+      "very_long",
+      "absurd"
+     ]
+    },
+    "madeline_no_dash_hair_color": {
+     "default": "empty",
+     "kind": "choice",
+     "values": [
+      "strawberry",
+      "empty",
+      "double",
+      "golden",
+      "baddy",
+      "fire_red",
+      "maroon",
+      "salmon",
+      "orange",
+      "lime_green",
+      "bright_green",
+      "forest_green",
+      "royal_blue",
+      "brown",
+      "black",
+      "white",
+      "grey",
+      "any_color"
+     ]
+    },
+    "madeline_one_dash_hair_color": {
+     "default": "strawberry",
+     "kind": "choice",
+     "values": [
+      "strawberry",
+      "empty",
+      "double",
+      "golden",
+      "baddy",
+      "fire_red",
+      "maroon",
+      "salmon",
+      "orange",
+      "lime_green",
+      "bright_green",
+      "forest_green",
+      "royal_blue",
+      "brown",
+      "black",
+      "white",
+      "grey",
+      "any_color"
+     ]
+    },
+    "madeline_two_dash_hair_color": {
+     "default": "double",
+     "kind": "choice",
+     "values": [
+      "strawberry",
+      "empty",
+      "double",
+      "golden",
+      "baddy",
+      "fire_red",
+      "maroon",
+      "salmon",
+      "orange",
+      "lime_green",
+      "bright_green",
+      "forest_green",
+      "royal_blue",
+      "brown",
+      "black",
+      "white",
+      "grey",
+      "any_color"
+     ]
+    },
+    "music_shuffle": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "consistent",
+      "singularity"
+     ]
+    },
+    "require_cassettes": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "reverse_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "roomsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "screen_flip_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "slow_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "strawberries_required_percentage": {
+     "aliases": {},
+     "default": "80",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "stun_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "total_strawberries": {
+     "aliases": {},
+     "default": "50",
+     "high": 202,
+     "kind": "range",
+     "low": 0
+    },
+    "trap_expiration_action": {
+     "default": "deaths",
+     "kind": "choice",
+     "values": [
+      "return_to_menu",
+      "deaths",
+      "new_screens"
+     ]
+    },
+    "trap_expiration_amount": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "trap_fill_percentage": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "trap_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "zoom_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Celeste (Open World)": "1.0.7"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Chrono Trigger Rando-Dalton Imperial": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "additional_key_items": {
+     "list": "provisional"
+    },
+    "alt_lightning2": {
+     "no_change": "banned"
+    },
+    "arris_dome_mod": {
+     "middle": "banned"
+    },
+    "atropos_level": {
+     "bottom": "banned"
+    },
+    "ayla_can_equip_percent": {
+     "middle": "banned"
+    },
+    "ayla_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "ayla_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "ayla_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "ayla_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "ayla_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "ayla_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "ayla_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "ayla_palette": {
+     "text": "provisional"
+    },
+    "balance_tech_mps": {
+     "true": "banned"
+    },
+    "battle_memory_cursor": {
+     "false": "banned"
+    },
+    "battle_speed": {
+     "middle": "banned"
+    },
+    "black_hole_factor": {
+     "middle": "banned"
+    },
+    "black_hole_min": {
+     "bottom": "banned"
+    },
+    "black_omen_mod": {
+     "middle": "banned"
+    },
+    "black_tyrano_level": {
+     "bottom": "banned"
+    },
+    "blackbird_mod": {
+     "middle": "banned"
+    },
+    "block_zenan_1000": {
+     "true": "banned"
+    },
+    "block_zenan_600": {
+     "true": "banned"
+    },
+    "boats_of_time": {
+     "true": "banned"
+    },
+    "boss_pool": {
+     "list": "provisional"
+    },
+    "boss_randomization_type": {
+     "shuffle": "banned"
+    },
+    "boss_xp_factor": {
+     "bottom": "banned"
+    },
+    "bronze_fist_policy": {
+     "random_other": "banned"
+    },
+    "burrow_min_level": {
+     "min": "banned"
+    },
+    "burrow_min_techlevel": {
+     "bottom": "banned"
+    },
+    "castle_min_level": {
+     "min": "banned"
+    },
+    "castle_min_techlevel": {
+     "bottom": "banned"
+    },
+    "cathedral_min_level": {
+     "min": "banned"
+    },
+    "cathedral_min_techlevel": {
+     "bottom": "banned"
+    },
+    "charm_enemy_pool": {
+     "all": "banned"
+    },
+    "charm_enemy_pool_2": {
+     "custom": "banned"
+    },
+    "charm_enemy_pool_3": {
+     "custom": "banned"
+    },
+    "charm_enemy_pool_4": {
+     "custom": "banned"
+    },
+    "charm_rate": {
+     "max": "banned"
+    },
+    "charm_rate_2": {
+     "max": "banned"
+    },
+    "charm_rate_3": {
+     "max": "banned"
+    },
+    "charm_rate_4": {
+     "max": "banned"
+    },
+    "charm_reward_pool": {
+     "rdi_random": "banned"
+    },
+    "charm_reward_pool_2": {
+     "vanilla": "banned"
+    },
+    "charm_reward_pool_3": {
+     "vanilla": "banned"
+    },
+    "charm_reward_pool_4": {
+     "vanilla": "banned"
+    },
+    "crono_can_equip_percent": {
+     "middle": "banned"
+    },
+    "crono_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "crono_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "crono_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "crono_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "crono_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "crono_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "crono_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "crono_palette": {
+     "text": "provisional"
+    },
+    "crono_trial_mod": {
+     "middle": "banned"
+    },
+    "cursed_woods_mod": {
+     "middle": "banned"
+    },
+    "custom_charm_enemy_pool": {
+     "list": "provisional"
+    },
+    "custom_charm_enemy_pool_2": {
+     "list": "provisional"
+    },
+    "custom_charm_enemy_pool_3": {
+     "list": "provisional"
+    },
+    "custom_charm_enemy_pool_4": {
+     "list": "provisional"
+    },
+    "custom_charm_reward_pool": {
+     "text": "provisional"
+    },
+    "custom_charm_reward_pool_2": {
+     "text": "provisional"
+    },
+    "custom_charm_reward_pool_3": {
+     "text": "provisional"
+    },
+    "custom_charm_reward_pool_4": {
+     "text": "provisional"
+    },
+    "custom_damage_mps": {
+     "list": "provisional"
+    },
+    "custom_drop_enemy_pool": {
+     "list": "provisional"
+    },
+    "custom_drop_enemy_pool_2": {
+     "list": "provisional"
+    },
+    "custom_drop_enemy_pool_3": {
+     "list": "provisional"
+    },
+    "custom_drop_enemy_pool_4": {
+     "list": "provisional"
+    },
+    "custom_drop_reward_pool": {
+     "text": "provisional"
+    },
+    "custom_drop_reward_pool_2": {
+     "text": "provisional"
+    },
+    "custom_drop_reward_pool_3": {
+     "text": "provisional"
+    },
+    "custom_drop_reward_pool_4": {
+     "text": "provisional"
+    },
+    "custom_loot_pool": {
+     "text": "provisional"
+    },
+    "custom_shop_item_spec": {
+     "text": "provisional"
+    },
+    "dactyl_min_level": {
+     "min": "banned"
+    },
+    "dactyl_min_techlevel": {
+     "bottom": "banned"
+    },
+    "dactyl_nest_mod": {
+     "middle": "banned"
+    },
+    "dalton_level": {
+     "bottom": "banned"
+    },
+    "dalton_plus_level": {
+     "bottom": "banned"
+    },
+    "death_peak_min_level": {
+     "bottom": "banned"
+    },
+    "death_peak_min_techlevel": {
+     "max": "banned"
+    },
+    "death_peak_mod": {
+     "middle": "banned"
+    },
+    "decay_factor": {
+     "top": "banned"
+    },
+    "default_fast_epoch_movement": {
+     "false": "banned"
+    },
+    "default_fast_loc_movement": {
+     "false": "banned"
+    },
+    "default_fast_ow_movement": {
+     "false": "banned"
+    },
+    "defense_safety_max_level": {
+     "bottom": "banned"
+    },
+    "defense_safety_min_level": {
+     "bottom": "banned"
+    },
+    "denadoro_mountains_mod": {
+     "middle": "banned"
+    },
+    "disable_element_locks": {
+     "false": "banned"
+    },
+    "dragon_tank_level": {
+     "bottom": "banned"
+    },
+    "drop_enemy_pool": {
+     "vanilla": "banned"
+    },
+    "drop_enemy_pool_2": {
+     "custom": "banned"
+    },
+    "drop_enemy_pool_3": {
+     "custom": "banned"
+    },
+    "drop_enemy_pool_4": {
+     "custom": "banned"
+    },
+    "drop_rate": {
+     "max": "banned"
+    },
+    "drop_rate_2": {
+     "max": "banned"
+    },
+    "drop_rate_3": {
+     "max": "banned"
+    },
+    "drop_rate_4": {
+     "max": "banned"
+    },
+    "drop_reward_pool": {
+     "vanilla": "banned"
+    },
+    "drop_reward_pool_2": {
+     "vanilla": "banned"
+    },
+    "drop_reward_pool_3": {
+     "vanilla": "banned"
+    },
+    "drop_reward_pool_4": {
+     "vanilla": "banned"
+    },
+    "ds_item_pool": {
+     "list": "provisional"
+    },
+    "ds_replacement_chance": {
+     "bottom": "banned"
+    },
+    "dynamic_scale_lavos": {
+     "false": "banned"
+    },
+    "dynamic_scale_lavos_gauntlet": {
+     "false": "banned"
+    },
+    "dynamic_scaling_scheme": {
+     "progression": "banned"
+    },
+    "elder_spawn_level": {
+     "middle": "banned"
+    },
+    "element_safety_level": {
+     "bottom": "banned"
+    },
+    "ending": {
+     "the_dream_project": "banned"
+    },
+    "enhasa_mod": {
+     "middle": "banned"
+    },
+    "epoch_battle_mod": {
+     "middle": "banned"
+    },
+    "equipable_rando_scheme": {
+     "random_all": "banned"
+    },
+    "excluded_spots": {
+     "list": "provisional"
+    },
+    "extra_tech_levels_per_char": {
+     "min": "banned"
+    },
+    "factory_ruins_mod": {
+     "middle": "banned"
+    },
+    "fair_min_level": {
+     "min": "banned"
+    },
+    "fair_min_techlevel": {
+     "bottom": "banned"
+    },
+    "fix_tp_doubling": {
+     "true": "banned"
+    },
+    "flea_level": {
+     "bottom": "banned"
+    },
+    "flea_plus_level": {
+     "bottom": "banned"
+    },
+    "force_early_flight": {
+     "false": "banned"
+    },
+    "forced_sightscope": {
+     "true": "banned"
+    },
+    "forced_spots": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_2": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_3": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_4": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_5": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_6": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_7": {
+     "list": "provisional"
+    },
+    "forced_weapon_effects_8": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_2": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_3": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_4": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_5": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_6": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_7": {
+     "list": "provisional"
+    },
+    "forced_weapon_stat_boosts_8": {
+     "list": "provisional"
+    },
+    "forest_maze_mod": {
+     "middle": "banned"
+    },
+    "frog_can_equip_percent": {
+     "middle": "banned"
+    },
+    "frog_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "frog_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "frog_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "frog_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "frog_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "frog_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "frog_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "frog_palette": {
+     "text": "provisional"
+    },
+    "gato_level": {
+     "bottom": "banned"
+    },
+    "geno_dome_mod": {
+     "middle": "banned"
+    },
+    "giants_claw_mod": {
+     "middle": "banned"
+    },
+    "giga_gaia_level": {
+     "bottom": "banned"
+    },
+    "giga_mutant_level": {
+     "middle": "banned"
+    },
+    "golem_boss_level": {
+     "middle": "banned"
+    },
+    "golem_level": {
+     "bottom": "banned"
+    },
+    "good_loot": {
+     "list": "provisional"
+    },
+    "good_loot_2": {
+     "list": "provisional"
+    },
+    "good_loot_3": {
+     "list": "provisional"
+    },
+    "good_loot_4": {
+     "list": "provisional"
+    },
+    "good_loot_5": {
+     "list": "provisional"
+    },
+    "good_loot_6": {
+     "list": "provisional"
+    },
+    "good_loot_7": {
+     "list": "provisional"
+    },
+    "good_loot_8": {
+     "list": "provisional"
+    },
+    "good_loot_rate": {
+     "max": "banned"
+    },
+    "good_loot_rate_2": {
+     "top": "banned"
+    },
+    "good_loot_rate_3": {
+     "top": "banned"
+    },
+    "good_loot_rate_4": {
+     "top": "banned"
+    },
+    "good_loot_rate_5": {
+     "top": "banned"
+    },
+    "good_loot_rate_6": {
+     "top": "banned"
+    },
+    "good_loot_rate_7": {
+     "top": "banned"
+    },
+    "good_loot_rate_8": {
+     "top": "banned"
+    },
+    "good_loot_spots": {
+     "list": "provisional"
+    },
+    "good_loot_spots_2": {
+     "list": "provisional"
+    },
+    "good_loot_spots_3": {
+     "list": "provisional"
+    },
+    "good_loot_spots_4": {
+     "list": "provisional"
+    },
+    "good_loot_spots_5": {
+     "list": "provisional"
+    },
+    "good_loot_spots_6": {
+     "list": "provisional"
+    },
+    "good_loot_spots_7": {
+     "list": "provisional"
+    },
+    "good_loot_spots_8": {
+     "list": "provisional"
+    },
+    "guaranteed_loot": {
+     "list": "provisional"
+    },
+    "guaranteed_loot_exact": {
+     "list": "provisional"
+    },
+    "guaranteed_shop_items": {
+     "list": "provisional"
+    },
+    "guardia_forest_1000_mod": {
+     "middle": "banned"
+    },
+    "guardia_forest_600_mod": {
+     "middle": "banned"
+    },
+    "guardian_level": {
+     "bottom": "banned"
+    },
+    "hard_lavos_end_boss": {
+     "true": "banned"
+    },
+    "heckran_cave_mod": {
+     "middle": "banned"
+    },
+    "heckran_level": {
+     "bottom": "banned"
+    },
+    "hunting_range_mod": {
+     "middle": "banned"
+    },
+    "incentive_factor": {
+     "middle": "banned"
+    },
+    "incentive_spots": {
+     "list": "provisional"
+    },
+    "item_base_prices": {
+     "balanced": "banned"
+    },
+    "item_price_max_multiplier": {
+     "bottom": "banned"
+    },
+    "item_price_min_multiplier": {
+     "bottom": "banned"
+    },
+    "item_price_randomization": {
+     "random_multiplier": "banned"
+    },
+    "jets_of_time": {
+     "true": "banned"
+    },
+    "johnny_high_item": {
+     "full_ether": "banned"
+    },
+    "johnny_high_quantity": {
+     "middle": "banned"
+    },
+    "johnny_high_threshold": {
+     "top": "banned"
+    },
+    "johnny_key_threshold": {
+     "min": "banned"
+    },
+    "johnny_low_item": {
+     "mid_tonic": "banned"
+    },
+    "johnny_low_quantity": {
+     "middle": "banned"
+    },
+    "johnny_low_threshold": {
+     "middle": "banned"
+    },
+    "johnny_mid_item": {
+     "ether": "banned"
+    },
+    "johnny_mid_quantity": {
+     "middle": "banned"
+    },
+    "johnny_mid_threshold": {
+     "top": "banned"
+    },
+    "krawlie_level": {
+     "bottom": "banned"
+    },
+    "lab_16_mod": {
+     "middle": "banned"
+    },
+    "lab_32_mod": {
+     "middle": "banned"
+    },
+    "lair_ruins_default_spot": {
+     "last_village_residence": "banned"
+    },
+    "lavos_gauntlet_bosses": {
+     "list": "provisional"
+    },
+    "lavos_gauntlet_rewards": {
+     "false": "banned"
+    },
+    "lavos_spawn_level": {
+     "bottom": "banned"
+    },
+    "level_cap": {
+     "middle": "banned"
+    },
+    "levels_per_boss": {
+     "bottom": "banned"
+    },
+    "levels_per_character": {
+     "bottom": "banned"
+    },
+    "levels_per_key_item": {
+     "min": "banned"
+    },
+    "levels_per_objective": {
+     "bottom": "banned"
+    },
+    "levels_per_quest": {
+     "min": "banned"
+    },
+    "lock_gates": {
+     "true": "banned"
+    },
+    "loose_key_items": {
+     "list": "provisional"
+    },
+    "loot_assignment_scheme": {
+     "shuffle": "banned"
+    },
+    "loot_pool": {
+     "tiered_random": "banned"
+    },
+    "lucca_can_equip_percent": {
+     "middle": "banned"
+    },
+    "lucca_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "lucca_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "lucca_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "lucca_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "lucca_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "lucca_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "lucca_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "lucca_palette": {
+     "text": "provisional"
+    },
+    "magic_cave_mod": {
+     "middle": "banned"
+    },
+    "magus_can_equip_percent": {
+     "middle": "banned"
+    },
+    "magus_castle_logical_connection": {
+     "false": "banned"
+    },
+    "magus_castle_mod": {
+     "middle": "banned"
+    },
+    "magus_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "magus_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "magus_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "magus_level": {
+     "bottom": "banned"
+    },
+    "magus_logical_magus_castle": {
+     "false": "banned"
+    },
+    "magus_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "magus_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "magus_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "magus_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "magus_nc_level": {
+     "bottom": "banned"
+    },
+    "magus_palette": {
+     "text": "provisional"
+    },
+    "magus_sequence_break_ocean_palace": {
+     "false": "banned"
+    },
+    "mammon_machine_level": {
+     "middle": "banned"
+    },
+    "manoria_cathedral_mod": {
+     "middle": "banned"
+    },
+    "mark_charmable_enemies": {
+     "true": "banned"
+    },
+    "mark_dropping_enemies": {
+     "true": "banned"
+    },
+    "marle_can_equip_percent": {
+     "middle": "banned"
+    },
+    "marle_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "marle_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "marle_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "marle_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "marle_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "marle_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "marle_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "marle_palette": {
+     "text": "provisional"
+    },
+    "masa_mune_level": {
+     "bottom": "banned"
+    },
+    "max_scaling_level": {
+     "middle": "banned"
+    },
+    "mdef_cap": {
+     "max": "banned"
+    },
+    "mdef_growth_scale_factor": {
+     "middle": "banned"
+    },
+    "mdef_levelup_cap": {
+     "max": "banned"
+    },
+    "mega_mutant_level": {
+     "middle": "banned"
+    },
+    "menu_memory_cursor": {
+     "false": "banned"
+    },
+    "message_speed": {
+     "middle": "banned"
+    },
+    "midboss_pool": {
+     "list": "provisional"
+    },
+    "midboss_randomization_type": {
+     "shuffle": "banned"
+    },
+    "midboss_reward_factor": {
+     "bottom": "banned"
+    },
+    "millennial_fair_mod": {
+     "middle": "banned"
+    },
+    "min_flight_depth": {
+     "min": "banned"
+    },
+    "minimum_recruits": {
+     "false": "banned"
+    },
+    "mt_woe_mod": {
+     "middle": "banned"
+    },
+    "mud_imp_level": {
+     "bottom": "banned"
+    },
+    "mystic_mountains_mod": {
+     "middle": "banned"
+    },
+    "nizbel_2_level": {
+     "bottom": "banned"
+    },
+    "nizbel_level": {
+     "bottom": "banned"
+    },
+    "no_omen_gauntlet": {
+     "false": "banned"
+    },
+    "normal_enemy_hp_scale": {
+     "middle": "banned"
+    },
+    "normalize_boss_xp": {
+     "true": "banned"
+    },
+    "normalize_enemies": {
+     "false": "banned"
+    },
+    "normalize_techs": {
+     "false": "banned"
+    },
+    "north_cape_min_level": {
+     "min": "banned"
+    },
+    "north_cape_min_techlevel": {
+     "bottom": "banned"
+    },
+    "north_cape_mod": {
+     "middle": "banned"
+    },
+    "northern_ruins_mod": {
+     "middle": "banned"
+    },
+    "not_buyable_items": {
+     "list": "provisional"
+    },
+    "not_sellable_items": {
+     "list": "provisional"
+    },
+    "num_algetty_portal_objectives": {
+     "bottom": "banned"
+    },
+    "num_bucket_objectives": {
+     "middle": "banned"
+    },
+    "num_gauntlet_objectives": {
+     "bottom": "banned"
+    },
+    "num_omen_objectives": {
+     "middle": "banned"
+    },
+    "num_timegauge_objectives": {
+     "top": "banned"
+    },
+    "objective_1": {
+     "text": "provisional"
+    },
+    "objective_2": {
+     "text": "provisional"
+    },
+    "objective_3": {
+     "text": "provisional"
+    },
+    "objective_4": {
+     "text": "provisional"
+    },
+    "objective_5": {
+     "text": "provisional"
+    },
+    "objective_6": {
+     "text": "provisional"
+    },
+    "objective_7": {
+     "text": "provisional"
+    },
+    "objective_8": {
+     "text": "provisional"
+    },
+    "obstacle_safety_level": {
+     "bottom": "banned"
+    },
+    "ocean_palace_mod": {
+     "middle": "banned"
+    },
+    "out_of_logic_starter_rewards": {
+     "list": "provisional"
+    },
+    "ozzie_trio_level": {
+     "bottom": "banned"
+    },
+    "ozzies_fort_mod": {
+     "middle": "banned"
+    },
+    "plando_recruit_castle": {
+     "char_any": "banned"
+    },
+    "plando_recruit_cathedral": {
+     "char_any": "banned"
+    },
+    "plando_recruit_crono_trial": {
+     "char_any": "banned"
+    },
+    "plando_recruit_dactyl_nest": {
+     "char_any": "banned"
+    },
+    "plando_recruit_death_peak": {
+     "char_any": "banned"
+    },
+    "plando_recruit_frogs_burrow": {
+     "char_any": "banned"
+    },
+    "plando_recruit_millennial_fair": {
+     "char_any": "banned"
+    },
+    "plando_recruit_north_cape": {
+     "char_any": "banned"
+    },
+    "plando_recruit_proto_dome": {
+     "char_any": "banned"
+    },
+    "plando_recruit_starter": {
+     "list": "provisional"
+    },
+    "plando_recruit_yakra_box": {
+     "char_any": "banned"
+    },
+    "post_assign_shuffle_rate": {
+     "middle": "banned"
+    },
+    "preserve_magic": {
+     "false": "banned"
+    },
+    "preserve_spots": {
+     "list": "provisional"
+    },
+    "preserve_spots_1": {
+     "list": "provisional"
+    },
+    "preserve_spots_2": {
+     "list": "provisional"
+    },
+    "preserve_spots_3": {
+     "list": "provisional"
+    },
+    "preserve_spots_4": {
+     "list": "provisional"
+    },
+    "proto_dome_mod": {
+     "middle": "banned"
+    },
+    "proto_min_level": {
+     "min": "banned"
+    },
+    "proto_min_techlevel": {
+     "bottom": "banned"
+    },
+    "r_series_level": {
+     "bottom": "banned"
+    },
+    "random_weapon_effect_spec": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_2": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_3": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_4": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_5": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_6": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_7": {
+     "text": "provisional"
+    },
+    "random_weapon_effect_spec_8": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_2": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_3": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_4": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_5": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_6": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_7": {
+     "text": "provisional"
+    },
+    "random_weapon_stat_boost_spec_8": {
+     "text": "provisional"
+    },
+    "remove_flashes": {
+     "false": "banned"
+    },
+    "reptite_lair_mod": {
+     "middle": "banned"
+    },
+    "rest_vanilla": {
+     "false": "banned"
+    },
+    "retinite_level": {
+     "bottom": "banned"
+    },
+    "robo_can_equip_percent": {
+     "middle": "banned"
+    },
+    "robo_gain_equip_dress_percent": {
+     "min": "banned"
+    },
+    "robo_gain_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "robo_gain_equip_personal_percent": {
+     "min": "banned"
+    },
+    "robo_lose_equip_dress_percent": {
+     "min": "banned"
+    },
+    "robo_lose_equip_heavy_armor_percent": {
+     "min": "banned"
+    },
+    "robo_lose_equip_normal_percent": {
+     "min": "banned"
+    },
+    "robo_lose_equip_personal_percent": {
+     "min": "banned"
+    },
+    "robo_palette": {
+     "text": "provisional"
+    },
+    "rust_tyrano_level": {
+     "middle": "banned"
+    },
+    "scale_gear": {
+     "true": "banned"
+    },
+    "scale_level_to_leader": {
+     "true": "banned"
+    },
+    "scale_techlevel_to_leader": {
+     "true": "banned"
+    },
+    "separate_gate_eras": {
+     "true": "banned"
+    },
+    "sewers_mod": {
+     "middle": "banned"
+    },
+    "shell_trial_mod": {
+     "middle": "banned"
+    },
+    "shop_capacity_randomization": {
+     "vanilla": "banned"
+    },
+    "shop_inventory_randomization": {
+     "tiered_random": "banned"
+    },
+    "show_all_chars_in_shop": {
+     "false": "banned"
+    },
+    "show_full_tech_list": {
+     "true": "banned"
+    },
+    "shuffle_enemies": {
+     "true": "banned"
+    },
+    "shuffle_entrances": {
+     "true": "banned"
+    },
+    "shuffle_gates": {
+     "true": "banned"
+    },
+    "sightscope_all": {
+     "true": "banned"
+    },
+    "slash_level": {
+     "bottom": "banned"
+    },
+    "son_of_sun_level": {
+     "middle": "banned"
+    },
+    "split_linked_chests": {
+     "false": "banned"
+    },
+    "split_tp": {
+     "false": "banned"
+    },
+    "starter_min_level": {
+     "min": "banned"
+    },
+    "starter_min_techlevel": {
+     "bottom": "banned"
+    },
+    "starter_rewards": {
+     "list": "provisional"
+    },
+    "static_boss_hp_scale": {
+     "middle": "banned"
+    },
+    "static_hp_scale_lavos": {
+     "false": "banned"
+    },
+    "sun_palace_mod": {
+     "middle": "banned"
+    },
+    "sunken_desert_mod": {
+     "middle": "banned"
+    },
+    "super_slash_level": {
+     "bottom": "banned"
+    },
+    "tech_damage": {
+     "shuffle": "banned"
+    },
+    "tech_damage_random_factor_max": {
+     "middle": "banned"
+    },
+    "tech_damage_random_factor_min": {
+     "middle": "banned"
+    },
+    "tech_level_forced_spots": {
+     "list": "provisional"
+    },
+    "tech_order": {
+     "mp_type": "banned"
+    },
+    "tech_rando_scheme": {
+     "chaos_element": "banned"
+    },
+    "terra_mutant_level": {
+     "middle": "banned"
+    },
+    "tp_scale": {
+     "middle": "banned"
+    },
+    "trading_post_base_cost": {
+     "bottom": "banned"
+    },
+    "trading_post_special_cost": {
+     "middle": "banned"
+    },
+    "trading_post_upgrade_cost": {
+     "bottom": "banned"
+    },
+    "trial_min_level": {
+     "min": "banned"
+    },
+    "trial_min_techlevel": {
+     "bottom": "banned"
+    },
+    "truce_canyon_mod": {
+     "middle": "banned"
+    },
+    "tyrano_lair_mod": {
+     "middle": "banned"
+    },
+    "use_daltonized_magus": {
+     "false": "banned"
+    },
+    "use_haste_all": {
+     "false": "banned"
+    },
+    "use_l_select_warp": {
+     "false": "banned"
+    },
+    "use_magus_dual_techs": {
+     "true": "banned"
+    },
+    "use_msu1": {
+     "false": "banned"
+    },
+    "use_phys_lucca": {
+     "false": "banned"
+    },
+    "use_phys_marle": {
+     "false": "banned"
+    },
+    "use_protect_all": {
+     "false": "banned"
+    },
+    "use_reraise": {
+     "false": "banned"
+    },
+    "use_tech_level_treasures": {
+     "false": "banned"
+    },
+    "vanilla_boss_spots": {
+     "list": "provisional"
+    },
+    "vanilla_spots": {
+     "list": "provisional"
+    },
+    "weapon_rando_effect_scheme": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_effect_scheme_2": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_effect_scheme_3": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_effect_scheme_4": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_effect_scheme_5": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_effect_scheme_6": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_effect_scheme_7": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_effect_scheme_8": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_pool": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_2": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_3": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_4": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_5": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_6": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_7": {
+     "list": "provisional"
+    },
+    "weapon_rando_pool_8": {
+     "list": "provisional"
+    },
+    "weapon_rando_stat_boost_scheme": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_2": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_3": {
+     "rdi_random": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_4": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_5": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_6": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_7": {
+     "shuffle_linked": "banned"
+    },
+    "weapon_rando_stat_boost_scheme_8": {
+     "shuffle_linked": "banned"
+    },
+    "window_background": {
+     "min": "banned"
+    },
+    "xp_penalty_level": {
+     "middle": "banned"
+    },
+    "xp_penalty_percent": {
+     "bottom": "banned"
+    },
+    "xp_scale": {
+     "middle": "banned"
+    },
+    "yakra_box_min_level": {
+     "bottom": "banned"
+    },
+    "yakra_box_min_techlevel": {
+     "bottom": "banned"
+    },
+    "yakra_level": {
+     "bottom": "banned"
+    },
+    "yakra_xiii_level": {
+     "middle": "banned"
+    },
+    "zeal2_level": {
+     "middle": "banned"
+    },
+    "zenan_bridge_mod": {
+     "middle": "banned"
+    },
+    "zombor_level": {
+     "bottom": "banned"
+    }
+   },
+   "options": {
+    "additional_key_items": {
+     "kind": "LIST"
+    },
+    "alt_lightning2": {
+     "default": "no_change",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "mute",
+      "nizbel_release"
+     ]
+    },
+    "arris_dome_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "atropos_level": {
+     "aliases": {},
+     "default": "33",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ayla_palette": {
+     "kind": "TEXT"
+    },
+    "balance_tech_mps": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "battle_memory_cursor": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "battle_speed": {
+     "aliases": {},
+     "default": "5",
+     "high": 8,
+     "kind": "range",
+     "low": 1
+    },
+    "black_hole_factor": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "black_hole_min": {
+     "aliases": {},
+     "default": "1000",
+     "high": 10000,
+     "kind": "range",
+     "low": 0
+    },
+    "black_omen_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "black_tyrano_level": {
+     "aliases": {},
+     "default": "20",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "blackbird_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "block_zenan_1000": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "block_zenan_600": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "boats_of_time": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "boss_pool": {
+     "kind": "LIST"
+    },
+    "boss_randomization_type": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "boss_xp_factor": {
+     "aliases": {},
+     "default": "200",
+     "high": 500,
+     "kind": "range",
+     "low": 0
+    },
+    "bronze_fist_policy": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "remove",
+      "4x_crit",
+      "random_other"
+     ]
+    },
+    "burrow_min_level": {
+     "aliases": {},
+     "default": "18",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "burrow_min_techlevel": {
+     "aliases": {},
+     "default": "2",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "castle_min_level": {
+     "aliases": {},
+     "default": "5",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "castle_min_techlevel": {
+     "aliases": {},
+     "default": "1",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "cathedral_min_level": {
+     "aliases": {},
+     "default": "5",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "cathedral_min_techlevel": {
+     "aliases": {},
+     "default": "0",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "charm_enemy_pool": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "charm_enemy_pool_2": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "charm_enemy_pool_3": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "charm_enemy_pool_4": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "charm_rate": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "charm_rate_2": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "charm_rate_3": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "charm_rate_4": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "charm_reward_pool": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "charm_reward_pool_2": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "charm_reward_pool_3": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "charm_reward_pool_4": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "crono_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "crono_palette": {
+     "kind": "TEXT"
+    },
+    "crono_trial_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "cursed_woods_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "custom_charm_enemy_pool": {
+     "kind": "LIST"
+    },
+    "custom_charm_enemy_pool_2": {
+     "kind": "LIST"
+    },
+    "custom_charm_enemy_pool_3": {
+     "kind": "LIST"
+    },
+    "custom_charm_enemy_pool_4": {
+     "kind": "LIST"
+    },
+    "custom_charm_reward_pool": {
+     "kind": "TEXT"
+    },
+    "custom_charm_reward_pool_2": {
+     "kind": "TEXT"
+    },
+    "custom_charm_reward_pool_3": {
+     "kind": "TEXT"
+    },
+    "custom_charm_reward_pool_4": {
+     "kind": "TEXT"
+    },
+    "custom_damage_mps": {
+     "kind": "LIST"
+    },
+    "custom_drop_enemy_pool": {
+     "kind": "LIST"
+    },
+    "custom_drop_enemy_pool_2": {
+     "kind": "LIST"
+    },
+    "custom_drop_enemy_pool_3": {
+     "kind": "LIST"
+    },
+    "custom_drop_enemy_pool_4": {
+     "kind": "LIST"
+    },
+    "custom_drop_reward_pool": {
+     "kind": "TEXT"
+    },
+    "custom_drop_reward_pool_2": {
+     "kind": "TEXT"
+    },
+    "custom_drop_reward_pool_3": {
+     "kind": "TEXT"
+    },
+    "custom_drop_reward_pool_4": {
+     "kind": "TEXT"
+    },
+    "custom_loot_pool": {
+     "kind": "TEXT"
+    },
+    "custom_shop_item_spec": {
+     "kind": "TEXT"
+    },
+    "dactyl_min_level": {
+     "aliases": {},
+     "default": "20",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "dactyl_min_techlevel": {
+     "aliases": {},
+     "default": "2",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "dactyl_nest_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "dalton_level": {
+     "aliases": {},
+     "default": "26",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "dalton_plus_level": {
+     "aliases": {},
+     "default": "20",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "death_peak_min_level": {
+     "aliases": {},
+     "default": "37",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "death_peak_min_techlevel": {
+     "aliases": {},
+     "default": "8",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "death_peak_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "decay_factor": {
+     "aliases": {},
+     "default": "70",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "default_fast_epoch_movement": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "default_fast_loc_movement": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "default_fast_ow_movement": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "defense_safety_max_level": {
+     "aliases": {},
+     "default": "30",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "defense_safety_min_level": {
+     "aliases": {},
+     "default": "10",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "denadoro_mountains_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "disable_element_locks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "dragon_tank_level": {
+     "aliases": {},
+     "default": "5",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "drop_enemy_pool": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "drop_enemy_pool_2": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "drop_enemy_pool_3": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "drop_enemy_pool_4": {
+     "default": "custom",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "all",
+      "midbosses",
+      "bosses",
+      "bosses_no_lavos",
+      "normal_enemies",
+      "hard_enemies",
+      "custom"
+     ]
+    },
+    "drop_rate": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "drop_rate_2": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "drop_rate_3": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "drop_rate_4": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "drop_reward_pool": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "drop_reward_pool_2": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "drop_reward_pool_3": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "drop_reward_pool_4": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "ds_item_pool": {
+     "kind": "LIST"
+    },
+    "ds_replacement_chance": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "dynamic_scale_lavos": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "dynamic_scale_lavos_gauntlet": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "dynamic_scaling_scheme": {
+     "default": "progression",
+     "kind": "choice",
+     "values": [
+      "none",
+      "progression",
+      "logic_depth"
+     ]
+    },
+    "elder_spawn_level": {
+     "aliases": {},
+     "default": "46",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "element_safety_level": {
+     "aliases": {},
+     "default": "30",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "ending": {
+     "default": "the_dream_project",
+     "kind": "choice",
+     "values": [
+      "beyond_time",
+      "the_dream_project",
+      "the_successor_of_guardia",
+      "goodnight",
+      "the_legendary_hero",
+      "the_unknown_past",
+      "people_of_the_times",
+      "the_oath",
+      "dino_age",
+      "what_the_prophet_seeks",
+      "a_slide_show",
+      "rdi_random"
+     ]
+    },
+    "enhasa_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "epoch_battle_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "equipable_rando_scheme": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "random_type",
+      "random_all"
+     ]
+    },
+    "excluded_spots": {
+     "kind": "LIST"
+    },
+    "extra_tech_levels_per_char": {
+     "aliases": {},
+     "default": "0",
+     "high": 5,
+     "kind": "range",
+     "low": 0
+    },
+    "factory_ruins_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "fair_min_level": {
+     "aliases": {},
+     "default": "1",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "fair_min_techlevel": {
+     "aliases": {},
+     "default": "0",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "fix_tp_doubling": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "flea_level": {
+     "aliases": {},
+     "default": "19",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "flea_plus_level": {
+     "aliases": {},
+     "default": "27",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "force_early_flight": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "forced_sightscope": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "forced_spots": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_2": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_3": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_4": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_5": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_6": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_7": {
+     "kind": "LIST"
+    },
+    "forced_weapon_effects_8": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_2": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_3": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_4": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_5": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_6": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_7": {
+     "kind": "LIST"
+    },
+    "forced_weapon_stat_boosts_8": {
+     "kind": "LIST"
+    },
+    "forest_maze_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "frog_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "frog_palette": {
+     "kind": "TEXT"
+    },
+    "gato_level": {
+     "aliases": {},
+     "default": "1",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "geno_dome_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "giants_claw_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "giga_gaia_level": {
+     "aliases": {},
+     "default": "30",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "giga_mutant_level": {
+     "aliases": {},
+     "default": "47",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "golem_boss_level": {
+     "aliases": {},
+     "default": "34",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "golem_level": {
+     "aliases": {},
+     "default": "27",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot": {
+     "kind": "LIST"
+    },
+    "good_loot_2": {
+     "kind": "LIST"
+    },
+    "good_loot_3": {
+     "kind": "LIST"
+    },
+    "good_loot_4": {
+     "kind": "LIST"
+    },
+    "good_loot_5": {
+     "kind": "LIST"
+    },
+    "good_loot_6": {
+     "kind": "LIST"
+    },
+    "good_loot_7": {
+     "kind": "LIST"
+    },
+    "good_loot_8": {
+     "kind": "LIST"
+    },
+    "good_loot_rate": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_2": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_3": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_4": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_5": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_6": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_7": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_rate_8": {
+     "aliases": {},
+     "default": "75",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "good_loot_spots": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_2": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_3": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_4": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_5": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_6": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_7": {
+     "kind": "LIST"
+    },
+    "good_loot_spots_8": {
+     "kind": "LIST"
+    },
+    "guaranteed_loot": {
+     "kind": "LIST"
+    },
+    "guaranteed_loot_exact": {
+     "kind": "LIST"
+    },
+    "guaranteed_shop_items": {
+     "kind": "LIST"
+    },
+    "guardia_forest_1000_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "guardia_forest_600_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "guardian_level": {
+     "aliases": {},
+     "default": "6",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "hard_lavos_end_boss": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "heckran_cave_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "heckran_level": {
+     "aliases": {},
+     "default": "12",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "hunting_range_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "incentive_factor": {
+     "aliases": {},
+     "default": "500",
+     "high": 1000,
+     "kind": "range",
+     "low": 100
+    },
+    "incentive_spots": {
+     "kind": "LIST"
+    },
+    "item_base_prices": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "balanced",
+      "max"
+     ]
+    },
+    "item_price_max_multiplier": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 5
+    },
+    "item_price_min_multiplier": {
+     "aliases": {},
+     "default": "50",
+     "high": 1000,
+     "kind": "range",
+     "low": 5
+    },
+    "item_price_randomization": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "rdi_random",
+      "random_multiplier"
+     ]
+    },
+    "jets_of_time": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "johnny_high_item": {
+     "default": "full_ether",
+     "kind": "choice",
+     "values": [
+      "wood_sword",
+      "iron_blade",
+      "steelsaber",
+      "lode_sword",
+      "red_katana",
+      "flint_edge",
+      "dark_saber",
+      "aeon_blade",
+      "demon_edge",
+      "alloyblade",
+      "star_sword",
+      "vedicblade",
+      "kali_blade",
+      "shiva_edge",
+      "bolt_sword",
+      "slasher",
+      "bronze_bow",
+      "iron_bow",
+      "lode_bow",
+      "robin_bow",
+      "sage_bow",
+      "dream_bow",
+      "cometarrow",
+      "sonicarrow",
+      "valkerye",
+      "siren",
+      "air_gun",
+      "dart_gun",
+      "auto_gun",
+      "picomagnum",
+      "plasma_gun",
+      "ruby_gun",
+      "dream_gun",
+      "megablast",
+      "shock_wave",
+      "wondershot",
+      "graedus",
+      "tin_arm",
+      "hammer_arm",
+      "miragehand",
+      "stone_arm",
+      "doomfinger",
+      "magma_hand",
+      "megatonarm",
+      "big_hand",
+      "kaiser_arm",
+      "giga_arm",
+      "terra_arm",
+      "crisis_arm",
+      "bronzeedge",
+      "iron_sword",
+      "masamune_1",
+      "flashblade",
+      "pearl_edge",
+      "rune_blade",
+      "bravesword",
+      "masamune_2",
+      "demon_hit",
+      "fist",
+      "fist_2",
+      "fist_3",
+      "iron_fist",
+      "bronzefist",
+      "pacifist",
+      "darkscythe",
+      "hurricane",
+      "starscythe",
+      "doomsickle",
+      "mop",
+      "bent_sword",
+      "bent_hilt",
+      "swallow",
+      "slasher_2",
+      "rainbow",
+      "hide_tunic",
+      "karate_gi",
+      "bronzemail",
+      "maidensuit",
+      "iron_suit",
+      "titan_vest",
+      "gold_suit",
+      "ruby_vest",
+      "dark_mail",
+      "mist_robe",
+      "meso_mail",
+      "lumin_robe",
+      "flash_mail",
+      "lode_vest",
+      "aeon_suit",
+      "zodiaccape",
+      "nova_armor",
+      "prismdress",
+      "moon_armor",
+      "ruby_armor",
+      "ravenarmor",
+      "gloom_cape",
+      "white_mail",
+      "black_mail",
+      "blue_mail",
+      "red_mail",
+      "white_vest",
+      "black_vest",
+      "blue_vest",
+      "red_vest",
+      "taban_vest",
+      "taban_suit",
+      "hide_cap",
+      "bronzehelm",
+      "iron_helm",
+      "beret",
+      "gold_helm",
+      "rock_helm",
+      "ceratopper",
+      "glow_helm",
+      "lode_helm",
+      "aeon_helm",
+      "prism_helm",
+      "doom_helm",
+      "dark_helm",
+      "gloom_helm",
+      "safe_helm",
+      "taban_helm",
+      "sight_cap",
+      "memory_cap",
+      "time_hat",
+      "vigil_hat",
+      "ozziepants",
+      "haste_helm",
+      "rbow_helm",
+      "mermaidcap",
+      "bandana",
+      "ribbon",
+      "powerglove",
+      "defender",
+      "magicscarf",
+      "amulet",
+      "dash_ring",
+      "hit_ring",
+      "power_ring",
+      "magic_ring",
+      "wall_ring",
+      "silvererng",
+      "gold_erng",
+      "silverstud",
+      "gold_stud",
+      "sightscope",
+      "charm_top",
+      "rage_band",
+      "frenzyband",
+      "third_eye",
+      "wallet",
+      "greendream",
+      "berserker",
+      "powerscarf",
+      "speed_belt",
+      "black_rock",
+      "blue_rock",
+      "silverrock",
+      "white_rock",
+      "gold_rock",
+      "hero_medal",
+      "musclering",
+      "flea_vest",
+      "magic_seal",
+      "power_seal",
+      "valor_crest",
+      "dragon_tear",
+      "sun_shades",
+      "prismspecs",
+      "tonic",
+      "mid_tonic",
+      "full_tonic",
+      "ether",
+      "mid_ether",
+      "full_ether",
+      "elixir",
+      "hyperether",
+      "megaelixir",
+      "heal",
+      "revive",
+      "shelter",
+      "power_meal",
+      "lapis",
+      "barrier",
+      "shield",
+      "power_tab",
+      "magic_tab",
+      "speed_tab",
+      "petal",
+      "fang",
+      "horn",
+      "feather",
+      "seed",
+      "bike_key",
+      "pendant",
+      "gate_key",
+      "prismshard",
+      "c_trigger",
+      "tools",
+      "jerky",
+      "dreamstone",
+      "race_log",
+      "moon_stone",
+      "sun_stone",
+      "ruby_knife",
+      "yakra_key",
+      "clone",
+      "tomas_pop",
+      "petals_2",
+      "fangs_2",
+      "horns_2",
+      "feathers_2",
+      "jetsoftime",
+      "pendant_charge",
+      "rainbow_shell"
+     ]
+    },
+    "johnny_high_quantity": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "johnny_high_threshold": {
+     "aliases": {},
+     "default": "2300",
+     "high": 2500,
+     "kind": "range",
+     "low": 0
+    },
+    "johnny_key_threshold": {
+     "aliases": {},
+     "default": "1500",
+     "high": 2500,
+     "kind": "range",
+     "low": 0
+    },
+    "johnny_low_item": {
+     "default": "mid_tonic",
+     "kind": "choice",
+     "values": [
+      "wood_sword",
+      "iron_blade",
+      "steelsaber",
+      "lode_sword",
+      "red_katana",
+      "flint_edge",
+      "dark_saber",
+      "aeon_blade",
+      "demon_edge",
+      "alloyblade",
+      "star_sword",
+      "vedicblade",
+      "kali_blade",
+      "shiva_edge",
+      "bolt_sword",
+      "slasher",
+      "bronze_bow",
+      "iron_bow",
+      "lode_bow",
+      "robin_bow",
+      "sage_bow",
+      "dream_bow",
+      "cometarrow",
+      "sonicarrow",
+      "valkerye",
+      "siren",
+      "air_gun",
+      "dart_gun",
+      "auto_gun",
+      "picomagnum",
+      "plasma_gun",
+      "ruby_gun",
+      "dream_gun",
+      "megablast",
+      "shock_wave",
+      "wondershot",
+      "graedus",
+      "tin_arm",
+      "hammer_arm",
+      "miragehand",
+      "stone_arm",
+      "doomfinger",
+      "magma_hand",
+      "megatonarm",
+      "big_hand",
+      "kaiser_arm",
+      "giga_arm",
+      "terra_arm",
+      "crisis_arm",
+      "bronzeedge",
+      "iron_sword",
+      "masamune_1",
+      "flashblade",
+      "pearl_edge",
+      "rune_blade",
+      "bravesword",
+      "masamune_2",
+      "demon_hit",
+      "fist",
+      "fist_2",
+      "fist_3",
+      "iron_fist",
+      "bronzefist",
+      "pacifist",
+      "darkscythe",
+      "hurricane",
+      "starscythe",
+      "doomsickle",
+      "mop",
+      "bent_sword",
+      "bent_hilt",
+      "swallow",
+      "slasher_2",
+      "rainbow",
+      "hide_tunic",
+      "karate_gi",
+      "bronzemail",
+      "maidensuit",
+      "iron_suit",
+      "titan_vest",
+      "gold_suit",
+      "ruby_vest",
+      "dark_mail",
+      "mist_robe",
+      "meso_mail",
+      "lumin_robe",
+      "flash_mail",
+      "lode_vest",
+      "aeon_suit",
+      "zodiaccape",
+      "nova_armor",
+      "prismdress",
+      "moon_armor",
+      "ruby_armor",
+      "ravenarmor",
+      "gloom_cape",
+      "white_mail",
+      "black_mail",
+      "blue_mail",
+      "red_mail",
+      "white_vest",
+      "black_vest",
+      "blue_vest",
+      "red_vest",
+      "taban_vest",
+      "taban_suit",
+      "hide_cap",
+      "bronzehelm",
+      "iron_helm",
+      "beret",
+      "gold_helm",
+      "rock_helm",
+      "ceratopper",
+      "glow_helm",
+      "lode_helm",
+      "aeon_helm",
+      "prism_helm",
+      "doom_helm",
+      "dark_helm",
+      "gloom_helm",
+      "safe_helm",
+      "taban_helm",
+      "sight_cap",
+      "memory_cap",
+      "time_hat",
+      "vigil_hat",
+      "ozziepants",
+      "haste_helm",
+      "rbow_helm",
+      "mermaidcap",
+      "bandana",
+      "ribbon",
+      "powerglove",
+      "defender",
+      "magicscarf",
+      "amulet",
+      "dash_ring",
+      "hit_ring",
+      "power_ring",
+      "magic_ring",
+      "wall_ring",
+      "silvererng",
+      "gold_erng",
+      "silverstud",
+      "gold_stud",
+      "sightscope",
+      "charm_top",
+      "rage_band",
+      "frenzyband",
+      "third_eye",
+      "wallet",
+      "greendream",
+      "berserker",
+      "powerscarf",
+      "speed_belt",
+      "black_rock",
+      "blue_rock",
+      "silverrock",
+      "white_rock",
+      "gold_rock",
+      "hero_medal",
+      "musclering",
+      "flea_vest",
+      "magic_seal",
+      "power_seal",
+      "valor_crest",
+      "dragon_tear",
+      "sun_shades",
+      "prismspecs",
+      "tonic",
+      "mid_tonic",
+      "full_tonic",
+      "ether",
+      "mid_ether",
+      "full_ether",
+      "elixir",
+      "hyperether",
+      "megaelixir",
+      "heal",
+      "revive",
+      "shelter",
+      "power_meal",
+      "lapis",
+      "barrier",
+      "shield",
+      "power_tab",
+      "magic_tab",
+      "speed_tab",
+      "petal",
+      "fang",
+      "horn",
+      "feather",
+      "seed",
+      "bike_key",
+      "pendant",
+      "gate_key",
+      "prismshard",
+      "c_trigger",
+      "tools",
+      "jerky",
+      "dreamstone",
+      "race_log",
+      "moon_stone",
+      "sun_stone",
+      "ruby_knife",
+      "yakra_key",
+      "clone",
+      "tomas_pop",
+      "petals_2",
+      "fangs_2",
+      "horns_2",
+      "feathers_2",
+      "jetsoftime",
+      "pendant_charge",
+      "rainbow_shell"
+     ]
+    },
+    "johnny_low_quantity": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "johnny_low_threshold": {
+     "aliases": {},
+     "default": "1200",
+     "high": 2500,
+     "kind": "range",
+     "low": 0
+    },
+    "johnny_mid_item": {
+     "default": "ether",
+     "kind": "choice",
+     "values": [
+      "wood_sword",
+      "iron_blade",
+      "steelsaber",
+      "lode_sword",
+      "red_katana",
+      "flint_edge",
+      "dark_saber",
+      "aeon_blade",
+      "demon_edge",
+      "alloyblade",
+      "star_sword",
+      "vedicblade",
+      "kali_blade",
+      "shiva_edge",
+      "bolt_sword",
+      "slasher",
+      "bronze_bow",
+      "iron_bow",
+      "lode_bow",
+      "robin_bow",
+      "sage_bow",
+      "dream_bow",
+      "cometarrow",
+      "sonicarrow",
+      "valkerye",
+      "siren",
+      "air_gun",
+      "dart_gun",
+      "auto_gun",
+      "picomagnum",
+      "plasma_gun",
+      "ruby_gun",
+      "dream_gun",
+      "megablast",
+      "shock_wave",
+      "wondershot",
+      "graedus",
+      "tin_arm",
+      "hammer_arm",
+      "miragehand",
+      "stone_arm",
+      "doomfinger",
+      "magma_hand",
+      "megatonarm",
+      "big_hand",
+      "kaiser_arm",
+      "giga_arm",
+      "terra_arm",
+      "crisis_arm",
+      "bronzeedge",
+      "iron_sword",
+      "masamune_1",
+      "flashblade",
+      "pearl_edge",
+      "rune_blade",
+      "bravesword",
+      "masamune_2",
+      "demon_hit",
+      "fist",
+      "fist_2",
+      "fist_3",
+      "iron_fist",
+      "bronzefist",
+      "pacifist",
+      "darkscythe",
+      "hurricane",
+      "starscythe",
+      "doomsickle",
+      "mop",
+      "bent_sword",
+      "bent_hilt",
+      "swallow",
+      "slasher_2",
+      "rainbow",
+      "hide_tunic",
+      "karate_gi",
+      "bronzemail",
+      "maidensuit",
+      "iron_suit",
+      "titan_vest",
+      "gold_suit",
+      "ruby_vest",
+      "dark_mail",
+      "mist_robe",
+      "meso_mail",
+      "lumin_robe",
+      "flash_mail",
+      "lode_vest",
+      "aeon_suit",
+      "zodiaccape",
+      "nova_armor",
+      "prismdress",
+      "moon_armor",
+      "ruby_armor",
+      "ravenarmor",
+      "gloom_cape",
+      "white_mail",
+      "black_mail",
+      "blue_mail",
+      "red_mail",
+      "white_vest",
+      "black_vest",
+      "blue_vest",
+      "red_vest",
+      "taban_vest",
+      "taban_suit",
+      "hide_cap",
+      "bronzehelm",
+      "iron_helm",
+      "beret",
+      "gold_helm",
+      "rock_helm",
+      "ceratopper",
+      "glow_helm",
+      "lode_helm",
+      "aeon_helm",
+      "prism_helm",
+      "doom_helm",
+      "dark_helm",
+      "gloom_helm",
+      "safe_helm",
+      "taban_helm",
+      "sight_cap",
+      "memory_cap",
+      "time_hat",
+      "vigil_hat",
+      "ozziepants",
+      "haste_helm",
+      "rbow_helm",
+      "mermaidcap",
+      "bandana",
+      "ribbon",
+      "powerglove",
+      "defender",
+      "magicscarf",
+      "amulet",
+      "dash_ring",
+      "hit_ring",
+      "power_ring",
+      "magic_ring",
+      "wall_ring",
+      "silvererng",
+      "gold_erng",
+      "silverstud",
+      "gold_stud",
+      "sightscope",
+      "charm_top",
+      "rage_band",
+      "frenzyband",
+      "third_eye",
+      "wallet",
+      "greendream",
+      "berserker",
+      "powerscarf",
+      "speed_belt",
+      "black_rock",
+      "blue_rock",
+      "silverrock",
+      "white_rock",
+      "gold_rock",
+      "hero_medal",
+      "musclering",
+      "flea_vest",
+      "magic_seal",
+      "power_seal",
+      "valor_crest",
+      "dragon_tear",
+      "sun_shades",
+      "prismspecs",
+      "tonic",
+      "mid_tonic",
+      "full_tonic",
+      "ether",
+      "mid_ether",
+      "full_ether",
+      "elixir",
+      "hyperether",
+      "megaelixir",
+      "heal",
+      "revive",
+      "shelter",
+      "power_meal",
+      "lapis",
+      "barrier",
+      "shield",
+      "power_tab",
+      "magic_tab",
+      "speed_tab",
+      "petal",
+      "fang",
+      "horn",
+      "feather",
+      "seed",
+      "bike_key",
+      "pendant",
+      "gate_key",
+      "prismshard",
+      "c_trigger",
+      "tools",
+      "jerky",
+      "dreamstone",
+      "race_log",
+      "moon_stone",
+      "sun_stone",
+      "ruby_knife",
+      "yakra_key",
+      "clone",
+      "tomas_pop",
+      "petals_2",
+      "fangs_2",
+      "horns_2",
+      "feathers_2",
+      "jetsoftime",
+      "pendant_charge",
+      "rainbow_shell"
+     ]
+    },
+    "johnny_mid_quantity": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "johnny_mid_threshold": {
+     "aliases": {},
+     "default": "2000",
+     "high": 2500,
+     "kind": "range",
+     "low": 0
+    },
+    "krawlie_level": {
+     "aliases": {},
+     "default": "6",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "lab_16_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "lab_32_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "lair_ruins_default_spot": {
+     "default": "last_village_residence",
+     "kind": "choice",
+     "values": [
+      "vortex_pt",
+      "northern_ruins_1000",
+      "fionas_shrine",
+      "cronos_house",
+      "truce_single_residence",
+      "truce_inn_1000",
+      "truce_ticket_office",
+      "truce_screaming_residence",
+      "millennial_fair",
+      "truce_market_1000",
+      "truce_mayor",
+      "luccas_house",
+      "guardia_castle_1000",
+      "guardia_forest_south_1000",
+      "guardia_forest_north_1000",
+      "zenan_bridge_1000_north",
+      "zenan_bridge_1000_south",
+      "porre_inn_1000",
+      "porre_market_1000",
+      "snail_stop",
+      "porre_mayor_1000",
+      "porre_residence_1000",
+      "porre_ticket_office",
+      "medina_elder_house",
+      "medina_inn",
+      "medina_portal",
+      "melchiors_hut",
+      "medina_market",
+      "medina_square",
+      "choras_mayor_1000",
+      "choras_inn_1000",
+      "choras_carpenter_1000",
+      "forest_ruins",
+      "heckran_cave",
+      "sun_keep_1000",
+      "west_cape",
+      "zenan_bridge_600_north",
+      "zenan_bridge_600_south",
+      "magic_cave_closed",
+      "magic_cave_open",
+      "sunken_desert",
+      "northern_ruins_600",
+      "magus_lair",
+      "giants_claw",
+      "truce_canyon",
+      "truce_couple_residence_600",
+      "truce_smith_residence",
+      "truce_inn_600",
+      "truce_market_600",
+      "guardia_forest_north_600",
+      "guardia_forest_south_600",
+      "guardia_castle_600",
+      "manoria_cathedral",
+      "dorino_bromide_residence",
+      "dorino_elder",
+      "dorino_inn",
+      "dorino_market",
+      "tatas_house",
+      "porre_elder_600",
+      "porre_cafe_600",
+      "porre_inn_600",
+      "porre_market_600",
+      "fionas_villa",
+      "choras_old_residence_600",
+      "choras_inn_600",
+      "choras_cafe_600",
+      "choras_carpenter_600",
+      "choras_market_600",
+      "cursed_woods",
+      "denadoro_mts",
+      "magic_cave_magus",
+      "ozzies_fort",
+      "sun_keep_600",
+      "trann_dome",
+      "bangor_dome",
+      "arris_dome",
+      "proto_dome",
+      "keepers_dome",
+      "factory_ruins",
+      "lab_16_west",
+      "lab_16_east",
+      "lab_32_west",
+      "lab_32_east",
+      "sewer_access_arris",
+      "sewer_access_keepers",
+      "sun_keep_2300",
+      "geno_dome",
+      "death_peak",
+      "sun_palace",
+      "mystic_mts",
+      "tyrano_lair",
+      "forest_maze_north",
+      "forest_maze_south",
+      "reptite_lair",
+      "dactyl_nest",
+      "sun_keep_prehistory",
+      "ioka_meeting_south",
+      "ioka_meeting_north",
+      "chiefs_hut",
+      "trading_post",
+      "ioka_sw_hut",
+      "ioka_sweet_water_hut",
+      "hunting_range",
+      "laruba_ruins",
+      "lair_ruins",
+      "terra_cave",
+      "skyway_enhasa_south",
+      "skyway_enhasa_north",
+      "skyway_kajar",
+      "dark_ages_portal",
+      "zeal_teleporter_bottom",
+      "zeal_teleporter_top",
+      "zeal_palace",
+      "enhasa",
+      "land_bridge_enhasa_north",
+      "land_bridge_enhasa_south",
+      "land_bridge_kajar",
+      "kajar",
+      "blackbird",
+      "north_cape",
+      "last_village_commons",
+      "last_village_empty_hut",
+      "last_village_shop",
+      "last_village_residence",
+      "sun_keep_last_village",
+      "last_village_portal"
+     ]
+    },
+    "lavos_gauntlet_bosses": {
+     "kind": "LIST"
+    },
+    "lavos_gauntlet_rewards": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "lavos_spawn_level": {
+     "aliases": {},
+     "default": "32",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "level_cap": {
+     "aliases": {},
+     "default": "50",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "levels_per_boss": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "levels_per_character": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "levels_per_key_item": {
+     "aliases": {},
+     "default": "0",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "levels_per_objective": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "levels_per_quest": {
+     "aliases": {},
+     "default": "200",
+     "high": 1000,
+     "kind": "range",
+     "low": 0
+    },
+    "lock_gates": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "loose_key_items": {
+     "kind": "LIST"
+    },
+    "loot_assignment_scheme": {
+     "default": "shuffle",
+     "kind": "choice",
+     "values": [
+      "shuffle",
+      "logic_depth"
+     ]
+    },
+    "loot_pool": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "rdi_random",
+      "tiered_random"
+     ]
+    },
+    "lucca_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "lucca_palette": {
+     "kind": "TEXT"
+    },
+    "magic_cave_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "magus_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_castle_logical_connection": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "magus_castle_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "magus_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_level": {
+     "aliases": {},
+     "default": "20",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_logical_magus_castle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "magus_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_nc_level": {
+     "aliases": {},
+     "default": "30",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "magus_palette": {
+     "kind": "TEXT"
+    },
+    "magus_sequence_break_ocean_palace": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "mammon_machine_level": {
+     "aliases": {},
+     "default": "44",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "manoria_cathedral_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "mark_charmable_enemies": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "mark_dropping_enemies": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "marle_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "marle_palette": {
+     "kind": "TEXT"
+    },
+    "masa_mune_level": {
+     "aliases": {},
+     "default": "15",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "max_scaling_level": {
+     "aliases": {},
+     "default": "50",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "mdef_cap": {
+     "aliases": {},
+     "default": "99",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "mdef_growth_scale_factor": {
+     "aliases": {},
+     "default": "100",
+     "high": 150,
+     "kind": "range",
+     "low": 50
+    },
+    "mdef_levelup_cap": {
+     "aliases": {},
+     "default": "99",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "mega_mutant_level": {
+     "aliases": {},
+     "default": "46",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "menu_memory_cursor": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "message_speed": {
+     "aliases": {},
+     "default": "5",
+     "high": 8,
+     "kind": "range",
+     "low": 1
+    },
+    "midboss_pool": {
+     "kind": "LIST"
+    },
+    "midboss_randomization_type": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "midboss_reward_factor": {
+     "aliases": {},
+     "default": "200",
+     "high": 500,
+     "kind": "range",
+     "low": 0
+    },
+    "millennial_fair_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "min_flight_depth": {
+     "aliases": {},
+     "default": "0",
+     "high": 6,
+     "kind": "range",
+     "low": 0
+    },
+    "minimum_recruits": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "mt_woe_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "mud_imp_level": {
+     "aliases": {},
+     "default": "29",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "mystic_mountains_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "nizbel_2_level": {
+     "aliases": {},
+     "default": "23",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "nizbel_level": {
+     "aliases": {},
+     "default": "17",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "no_omen_gauntlet": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "normal_enemy_hp_scale": {
+     "aliases": {},
+     "default": "100",
+     "high": 200,
+     "kind": "range",
+     "low": 5
+    },
+    "normalize_boss_xp": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "normalize_enemies": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "normalize_techs": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "north_cape_min_level": {
+     "aliases": {},
+     "default": "37",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "north_cape_min_techlevel": {
+     "aliases": {},
+     "default": "3",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "north_cape_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "northern_ruins_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "not_buyable_items": {
+     "kind": "LIST"
+    },
+    "not_sellable_items": {
+     "kind": "LIST"
+    },
+    "num_algetty_portal_objectives": {
+     "aliases": {},
+     "default": "3",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "num_bucket_objectives": {
+     "aliases": {},
+     "default": "5",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "num_gauntlet_objectives": {
+     "aliases": {},
+     "default": "5",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "num_omen_objectives": {
+     "aliases": {},
+     "default": "4",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "num_timegauge_objectives": {
+     "aliases": {},
+     "default": "6",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "objective_1": {
+     "kind": "TEXT"
+    },
+    "objective_2": {
+     "kind": "TEXT"
+    },
+    "objective_3": {
+     "kind": "TEXT"
+    },
+    "objective_4": {
+     "kind": "TEXT"
+    },
+    "objective_5": {
+     "kind": "TEXT"
+    },
+    "objective_6": {
+     "kind": "TEXT"
+    },
+    "objective_7": {
+     "kind": "TEXT"
+    },
+    "objective_8": {
+     "kind": "TEXT"
+    },
+    "obstacle_safety_level": {
+     "aliases": {},
+     "default": "30",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "ocean_palace_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "out_of_logic_starter_rewards": {
+     "kind": "LIST"
+    },
+    "ozzie_trio_level": {
+     "aliases": {},
+     "default": "33",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "ozzies_fort_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "plando_recruit_castle": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_cathedral": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_crono_trial": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_dactyl_nest": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_death_peak": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_frogs_burrow": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_millennial_fair": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_north_cape": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_proto_dome": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "plando_recruit_starter": {
+     "kind": "LIST"
+    },
+    "plando_recruit_yakra_box": {
+     "default": "char_any",
+     "kind": "choice",
+     "values": [
+      "char_any",
+      "none",
+      "rdi_random",
+      "crono",
+      "marle",
+      "lucca",
+      "robo",
+      "frog",
+      "ayla",
+      "magus"
+     ]
+    },
+    "post_assign_shuffle_rate": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "preserve_magic": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "preserve_spots": {
+     "kind": "LIST"
+    },
+    "preserve_spots_1": {
+     "kind": "LIST"
+    },
+    "preserve_spots_2": {
+     "kind": "LIST"
+    },
+    "preserve_spots_3": {
+     "kind": "LIST"
+    },
+    "preserve_spots_4": {
+     "kind": "LIST"
+    },
+    "proto_dome_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "proto_min_level": {
+     "aliases": {},
+     "default": "10",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "proto_min_techlevel": {
+     "aliases": {},
+     "default": "2",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "r_series_level": {
+     "aliases": {},
+     "default": "5",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "random_weapon_effect_spec": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_2": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_3": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_4": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_5": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_6": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_7": {
+     "kind": "TEXT"
+    },
+    "random_weapon_effect_spec_8": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_2": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_3": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_4": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_5": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_6": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_7": {
+     "kind": "TEXT"
+    },
+    "random_weapon_stat_boost_spec_8": {
+     "kind": "TEXT"
+    },
+    "remove_flashes": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "reptite_lair_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "rest_vanilla": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "retinite_level": {
+     "aliases": {},
+     "default": "28",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_can_equip_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_gain_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_gain_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_gain_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_lose_equip_dress_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_lose_equip_heavy_armor_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_lose_equip_normal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_lose_equip_personal_percent": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "robo_palette": {
+     "kind": "TEXT"
+    },
+    "rust_tyrano_level": {
+     "aliases": {},
+     "default": "35",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "scale_gear": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "scale_level_to_leader": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "scale_techlevel_to_leader": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "separate_gate_eras": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "sewers_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "shell_trial_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "shop_capacity_randomization": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "shop_inventory_randomization": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "full_random",
+      "tiered_random",
+      "custom_random"
+     ]
+    },
+    "show_all_chars_in_shop": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "show_full_tech_list": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_enemies": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_entrances": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_gates": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "sightscope_all": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "slash_level": {
+     "aliases": {},
+     "default": "20",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "son_of_sun_level": {
+     "aliases": {},
+     "default": "43",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "split_linked_chests": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "split_tp": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "starter_min_level": {
+     "aliases": {},
+     "default": "1",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "starter_min_techlevel": {
+     "aliases": {},
+     "default": "0",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "starter_rewards": {
+     "kind": "LIST"
+    },
+    "static_boss_hp_scale": {
+     "aliases": {},
+     "default": "75",
+     "high": 200,
+     "kind": "range",
+     "low": 5
+    },
+    "static_hp_scale_lavos": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "sun_palace_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "sunken_desert_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "super_slash_level": {
+     "aliases": {},
+     "default": "27",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "tech_damage": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle",
+      "rdi_random"
+     ]
+    },
+    "tech_damage_random_factor_max": {
+     "aliases": {},
+     "default": "100",
+     "high": 200,
+     "kind": "range",
+     "low": 5
+    },
+    "tech_damage_random_factor_min": {
+     "aliases": {},
+     "default": "100",
+     "high": 200,
+     "kind": "range",
+     "low": 5
+    },
+    "tech_level_forced_spots": {
+     "kind": "LIST"
+    },
+    "tech_order": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "rdi_random",
+      "mp",
+      "mp_type"
+     ]
+    },
+    "tech_rando_scheme": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "shuffle_element",
+      "random_element",
+      "chaos_element"
+     ]
+    },
+    "terra_mutant_level": {
+     "aliases": {},
+     "default": "48",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "tp_scale": {
+     "aliases": {},
+     "default": "400",
+     "high": 1000,
+     "kind": "range",
+     "low": 50
+    },
+    "trading_post_base_cost": {
+     "aliases": {},
+     "default": "3",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "trading_post_special_cost": {
+     "aliases": {},
+     "default": "10",
+     "high": 15,
+     "kind": "range",
+     "low": 1
+    },
+    "trading_post_upgrade_cost": {
+     "aliases": {},
+     "default": "3",
+     "high": 10,
+     "kind": "range",
+     "low": 1
+    },
+    "trial_min_level": {
+     "aliases": {},
+     "default": "7",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "trial_min_techlevel": {
+     "aliases": {},
+     "default": "1",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "truce_canyon_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "tyrano_lair_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "use_daltonized_magus": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_haste_all": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_l_select_warp": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_magus_dual_techs": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_msu1": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_phys_lucca": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_phys_marle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_protect_all": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_reraise": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "use_tech_level_treasures": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "vanilla_boss_spots": {
+     "kind": "LIST"
+    },
+    "vanilla_spots": {
+     "kind": "LIST"
+    },
+    "weapon_rando_effect_scheme": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_2": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_3": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_4": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_5": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_6": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_7": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_effect_scheme_8": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_pool": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_2": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_3": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_4": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_5": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_6": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_7": {
+     "kind": "LIST"
+    },
+    "weapon_rando_pool_8": {
+     "kind": "LIST"
+    },
+    "weapon_rando_stat_boost_scheme": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_2": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_3": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_4": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_5": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_6": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_7": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "weapon_rando_stat_boost_scheme_8": {
+     "default": "shuffle_linked",
+     "kind": "choice",
+     "values": [
+      "no_change",
+      "shuffle",
+      "shuffle_linked",
+      "rdi_random"
+     ]
+    },
+    "window_background": {
+     "aliases": {},
+     "default": "1",
+     "high": 8,
+     "kind": "range",
+     "low": 1
+    },
+    "xp_penalty_level": {
+     "aliases": {},
+     "default": "40",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "xp_penalty_percent": {
+     "aliases": {},
+     "default": "15",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "xp_scale": {
+     "aliases": {},
+     "default": "400",
+     "high": 1000,
+     "kind": "range",
+     "low": 50
+    },
+    "yakra_box_min_level": {
+     "aliases": {},
+     "default": "25",
+     "high": 99,
+     "kind": "range",
+     "low": 1
+    },
+    "yakra_box_min_techlevel": {
+     "aliases": {},
+     "default": "3",
+     "high": 8,
+     "kind": "range",
+     "low": 0
+    },
+    "yakra_level": {
+     "aliases": {},
+     "default": "4",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "yakra_xiii_level": {
+     "aliases": {},
+     "default": "39",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "zeal2_level": {
+     "aliases": {},
+     "default": "50",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    },
+    "zenan_bridge_mod": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": -50
+    },
+    "zombor_level": {
+     "aliases": {},
+     "default": "9",
+     "high": 99,
+     "kind": "range",
+     "low": 0
+    }
+   },
+   "requires": {
+    "game": {
+     "Chrono Trigger Rando-Dalton Imperial": "0.0.4"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Cowtastic Cafe": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "allow_milk_rate_adjustment": {
+     "false": "banned"
+    },
+    "censorship_mode": {
+     "false": "banned"
+    },
+    "checks_per_ingredient": {
+     "bottom": "banned"
+    },
+    "death_link": {
+     "true": "banned"
+    },
+    "death_link_penalty": {
+     "max": "banned"
+    },
+    "death_link_send_quality": {
+     "good": "banned"
+    },
+    "drinks_per_check": {
+     "max": "banned"
+    },
+    "extra_candy": {
+     "min": "banned"
+    },
+    "milk_flow": {
+     "min": "banned"
+    },
+    "min_drink_quality": {
+     "great": "banned"
+    },
+    "scout_shop": {
+     "none": "banned"
+    },
+    "shop_base_price": {
+     "max": "banned"
+    },
+    "shop_locations": {
+     "bottom": "banned"
+    },
+    "shop_price_step": {
+     "max": "banned"
+    },
+    "starting_ingredients": {
+     "list": "provisional"
+    }
+   },
+   "options": {
+    "allow_milk_rate_adjustment": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "censorship_mode": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "checks_per_ingredient": {
+     "aliases": {},
+     "default": "4",
+     "high": 10,
+     "kind": "range",
+     "low": 2
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link_penalty": {
+     "aliases": {},
+     "default": "20",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "death_link_send_quality": {
+     "default": "meh",
+     "kind": "choice",
+     "values": [
+      "great",
+      "good",
+      "okay",
+      "meh",
+      "bad",
+      "ruined"
+     ]
+    },
+    "drinks_per_check": {
+     "aliases": {},
+     "default": "3",
+     "high": 20,
+     "kind": "range",
+     "low": 1
+    },
+    "extra_candy": {
+     "aliases": {},
+     "default": "1",
+     "high": 30,
+     "kind": "range",
+     "low": 0
+    },
+    "milk_flow": {
+     "aliases": {},
+     "default": "5",
+     "high": 20,
+     "kind": "range",
+     "low": 0
+    },
+    "min_drink_quality": {
+     "default": "good",
+     "kind": "choice",
+     "values": [
+      "perfect",
+      "great",
+      "good",
+      "okay"
+     ]
+    },
+    "scout_shop": {
+     "default": "visible",
+     "kind": "choice",
+     "values": [
+      "none",
+      "visible",
+      "all"
+     ]
+    },
+    "shop_base_price": {
+     "aliases": {},
+     "default": "50",
+     "high": 100,
+     "kind": "range",
+     "low": 10
+    },
+    "shop_locations": {
+     "aliases": {},
+     "default": "10",
+     "high": 25,
+     "kind": "range",
+     "low": 0
+    },
+    "shop_price_step": {
+     "aliases": {},
+     "default": "25",
+     "high": 50,
+     "kind": "range",
+     "low": 5
+    },
+    "starting_ingredients": {
+     "kind": "LIST"
+    }
+   },
+   "requires": {
+    "game": {
+     "Cowtastic Cafe": "1.0.2"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Flipwitch Forbidden Sex Hex": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "crystal_teleports": {
+     "false": "banned"
+    },
+    "death_link": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "gachapon_shuffle": {
+     "all": "banned",
+     "coin": "banned"
+    },
+    "i_am_a_gooner": {
+     "true": "banned"
+    },
+    "junk_hint": {
+     "bottom": "banned",
+     "middle": "banned"
+    },
+    "pottery_lottery": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "quest_for_sex": {
+     "all": "banned",
+     "quests": "banned"
+    },
+    "shop_prices": {
+     "bottom": "banned",
+     "middle": "banned"
+    },
+    "shopsanity": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "shuffle_chaos_pieces": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "shuffle_dodge": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "shuffle_double_jump": {
+     "false": "banned",
+     "true": "banned"
+    },
+    "starting_area": {
+     "beatrice_house": "banned",
+     "goblin_cave": "banned"
+    },
+    "starting_gender": {
+     "female": "banned",
+     "male": "banned"
+    },
+    "stat_shuffle": {
+     "false": "banned",
+     "true": "banned"
+    }
+   },
+   "options": {
+    "crystal_teleports": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "gachapon_shuffle": {
+     "default": "coin",
+     "kind": "choice",
+     "values": [
+      "off",
+      "coin",
+      "all"
+     ]
+    },
+    "i_am_a_gooner": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "junk_hint": {
+     "aliases": {},
+     "default": "20",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "pottery_lottery": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "quest_for_sex": {
+     "default": "quests",
+     "kind": "choice",
+     "values": [
+      "off",
+      "sensei",
+      "quests",
+      "all"
+     ]
+    },
+    "shop_prices": {
+     "aliases": {},
+     "default": "25",
+     "high": 200,
+     "kind": "range",
+     "low": 0
+    },
+    "shopsanity": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_chaos_pieces": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_dodge": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_double_jump": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "starting_area": {
+     "default": "beatrice_house",
+     "kind": "choice",
+     "values": [
+      "beatrice_house",
+      "goblin_cave",
+      "spirit_city",
+      "ghost_castle",
+      "jigoku",
+      "club_demon",
+      "tengoku",
+      "slime_citadel",
+      "umi_umi"
+     ]
+    },
+    "starting_gender": {
+     "default": "female",
+     "kind": "choice",
+     "values": [
+      "female",
+      "male"
+     ]
+    },
+    "stat_shuffle": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "version": "0.6.8"
+   }
+  },
+  "MetroCUBEvania": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "death_link": {
+     "true": "banned"
+    },
+    "death_link_amnesty": {
+     "bottom": "banned"
+    },
+    "extra_checkpoint": {
+     "true": "banned"
+    },
+    "extra_checks": {
+     "true": "banned"
+    },
+    "medal_hunt": {
+     "true": "banned"
+    }
+   },
+   "options": {
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link_amnesty": {
+     "aliases": {},
+     "default": "10",
+     "high": 50,
+     "kind": "range",
+     "low": 1
+    },
+    "extra_checkpoint": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "extra_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "medal_hunt": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "version": "0.6.8"
+   }
+  },
+  "Minecraft": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "advancement_goal": {
+     "min": "banned"
+    },
+    "bee_traps": {
+     "max": "banned"
+    },
+    "combat_difficulty": {
+     "easy": "banned"
+    },
+    "death_link": {
+     "true": "banned"
+    },
+    "egg_shards_available": {
+     "min": "banned"
+    },
+    "egg_shards_required": {
+     "min": "banned"
+    },
+    "immediate_respawn": {
+     "false": "banned"
+    },
+    "include_hard_advancements": {
+     "false": "banned"
+    },
+    "include_postgame_advancements": {
+     "false": "banned"
+    },
+    "include_unreasonable_advancements": {
+     "false": "banned"
+    },
+    "plando_connections": {
+     "list": "provisional"
+    },
+    "required_bosses": {
+     "none": "banned"
+    },
+    "send_defeated_mobs": {
+     "false": "banned"
+    },
+    "shuffle_structures": {
+     "false": "banned"
+    },
+    "starting_items": {
+     "list": "provisional"
+    },
+    "structure_compasses": {
+     "false": "banned"
+    }
+   },
+   "options": {
+    "advancement_goal": {
+     "aliases": {},
+     "default": "40",
+     "high": 138,
+     "kind": "range",
+     "low": 0
+    },
+    "bee_traps": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "combat_difficulty": {
+     "default": "normal",
+     "kind": "choice",
+     "values": [
+      "easy",
+      "normal",
+      "hard"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "egg_shards_available": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "egg_shards_required": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "immediate_respawn": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_hard_advancements": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_postgame_advancements": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_unreasonable_advancements": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "plando_connections": {
+     "kind": "LIST"
+    },
+    "required_bosses": {
+     "default": "ender_dragon",
+     "kind": "choice",
+     "values": [
+      "none",
+      "ender_dragon",
+      "wither",
+      "both"
+     ]
+    },
+    "send_defeated_mobs": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_structures": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "starting_items": {
+     "kind": "LIST"
+    },
+    "structure_compasses": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Minecraft": "2.2.0"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Quake 1": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "ap_vanilla_items": {
+     "dict": "provisional"
+    },
+    "area_maps": {
+     "start_with": "banned"
+    },
+    "basegame": {
+     "quake": "banned"
+    },
+    "custom_included_locations": {
+     "dict": "provisional"
+    },
+    "damage_remover_abilities": {
+     "true": "banned"
+    },
+    "death_link": {
+     "false": "banned"
+    },
+    "difficulty": {
+     "medium": "banned"
+    },
+    "episode1": {
+     "true": "banned"
+    },
+    "episode2": {
+     "true": "banned"
+    },
+    "episode3": {
+     "true": "banned"
+    },
+    "episode4": {
+     "true": "banned"
+    },
+    "episode5": {
+     "true": "banned"
+    },
+    "goal": {
+     "all": "banned"
+    },
+    "goal_percentage": {
+     "max": "banned"
+    },
+    "include_allkills": {
+     "true": "banned"
+    },
+    "include_end": {
+     "true": "banned"
+    },
+    "include_hub": {
+     "true": "banned"
+    },
+    "include_mp_items": {
+     "false": "banned"
+    },
+    "include_secrets": {
+     "true": "banned"
+    },
+    "included_locations_preset": {
+     "dense": "banned"
+    },
+    "level_count": {
+     "max": "banned"
+    },
+    "logic_difficulty": {
+     "medium": "banned"
+    },
+    "powerup_recharge": {
+     "false": "banned"
+    },
+    "progressive_inventories": {
+     "true": "banned"
+    },
+    "progressive_weapons": {
+     "true": "banned"
+    },
+    "shell_recharge": {
+     "true": "banned"
+    },
+    "shuffle_starting_levels": {
+     "true": "banned"
+    },
+    "skill_level": {
+     "medium": "banned"
+    },
+    "starting_level_count": {
+     "bottom": "banned"
+    },
+    "trap_percentage": {
+     "min": "banned"
+    },
+    "unlock_abilities": {
+     "true": "banned"
+    },
+    "unlock_interact": {
+     "true": "banned"
+    }
+   },
+   "options": {
+    "ap_vanilla_items": {
+     "kind": "DICT"
+    },
+    "area_maps": {
+     "default": "start_with",
+     "kind": "choice",
+     "values": [
+      "none",
+      "unlockable",
+      "start_with"
+     ]
+    },
+    "basegame": {
+     "default": "quake",
+     "kind": "choice",
+     "values": [
+      "quake",
+      "hipnotic",
+      "rogue",
+      "mg1",
+      "dopa"
+     ]
+    },
+    "custom_included_locations": {
+     "kind": "DICT"
+    },
+    "damage_remover_abilities": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "difficulty": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "easy",
+      "medium",
+      "hard",
+      "extreme"
+     ]
+    },
+    "episode1": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "episode2": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "episode3": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "episode4": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "episode5": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "goal": {
+     "default": "all",
+     "kind": "choice",
+     "values": [
+      "beat_all_bosses",
+      "beat_all_levels",
+      "collect_all_secrets",
+      "all"
+     ]
+    },
+    "goal_percentage": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 25
+    },
+    "include_allkills": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_end": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_hub": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_mp_items": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_secrets": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "included_locations_preset": {
+     "default": "balanced",
+     "kind": "choice",
+     "values": [
+      "iconic",
+      "balanced",
+      "dense",
+      "all",
+      "custom"
+     ]
+    },
+    "level_count": {
+     "aliases": {},
+     "default": "9",
+     "high": 32,
+     "kind": "range",
+     "low": 3
+    },
+    "logic_difficulty": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "easy",
+      "medium",
+      "hard",
+      "extreme"
+     ]
+    },
+    "powerup_recharge": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "progressive_inventories": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "progressive_weapons": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shell_recharge": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shuffle_starting_levels": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "skill_level": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "easy",
+      "medium",
+      "hard",
+      "nightmare"
+     ]
+    },
+    "starting_level_count": {
+     "aliases": {},
+     "default": "1",
+     "high": 32,
+     "kind": "range",
+     "low": 1
+    },
+    "trap_percentage": {
+     "aliases": {},
+     "default": "10",
+     "high": 90,
+     "kind": "range",
+     "low": 0
+    },
+    "traps_as_progressive": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "unlock_abilities": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "unlock_interact": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Quake 1": "1.2.3"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Rift of the Necrodancer": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "additional_song_count": {
+     "min": "banned"
+    },
+    "diamond_count_percentage": {
+     "min": "banned"
+    },
+    "diamond_win_percentage": {
+     "min": "banned"
+    },
+    "difficulty_option": {
+     "list": "provisional"
+    },
+    "dlc_songs": {
+     "list": "provisional"
+    },
+    "duplicate_song_percentage": {
+     "min": "banned"
+    },
+    "exclude_songs": {
+     "list": "provisional"
+    },
+    "full_combo_needed": {
+     "false": "banned"
+    },
+    "goal_song_pool": {
+     "list": "provisional"
+    },
+    "grade_needed": {
+     "any": "banned"
+    },
+    "include_boss_battle": {
+     "false": "banned"
+    },
+    "include_minigames": {
+     "false": "banned"
+    },
+    "include_remix": {
+     "true": "banned"
+    },
+    "include_songs": {
+     "list": "provisional"
+    },
+    "include_songs_percentage": {
+     "max": "banned"
+    },
+    "max_intensity": {
+     "max": "banned"
+    },
+    "min_intensity": {
+     "min": "banned"
+    },
+    "rotn_mod_data": {
+     "text": "provisional"
+    },
+    "starting_song_count": {
+     "min": "banned"
+    }
+   },
+   "options": {
+    "additional_song_count": {
+     "aliases": {},
+     "default": "30",
+     "high": 2000,
+     "kind": "range",
+     "low": 15
+    },
+    "diamond_count_percentage": {
+     "aliases": {},
+     "default": "80",
+     "high": 100,
+     "kind": "range",
+     "low": 50
+    },
+    "diamond_win_percentage": {
+     "aliases": {},
+     "default": "80",
+     "high": 100,
+     "kind": "range",
+     "low": 50
+    },
+    "difficulty_option": {
+     "kind": "LIST"
+    },
+    "dlc_songs": {
+     "kind": "LIST"
+    },
+    "duplicate_song_percentage": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "exclude_songs": {
+     "kind": "LIST"
+    },
+    "full_combo_needed": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "goal_song_pool": {
+     "kind": "LIST"
+    },
+    "grade_needed": {
+     "default": "any",
+     "kind": "choice",
+     "values": [
+      "any",
+      "c",
+      "b",
+      "a",
+      "s",
+      "s_plus"
+     ]
+    },
+    "include_boss_battle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true",
+      "split"
+     ]
+    },
+    "include_minigames": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true",
+      "split"
+     ]
+    },
+    "include_remix": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "include_songs": {
+     "kind": "LIST"
+    },
+    "include_songs_percentage": {
+     "aliases": {},
+     "default": "100",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "max_intensity": {
+     "aliases": {},
+     "default": "40",
+     "high": 40,
+     "kind": "range",
+     "low": 1
+    },
+    "min_intensity": {
+     "aliases": {},
+     "default": "1",
+     "high": 40,
+     "kind": "range",
+     "low": 1
+    },
+    "rotn_mod_data": {
+     "kind": "TEXT"
+    },
+    "starting_song_count": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 3
+    }
+   },
+   "requires": {
+    "game": {
+     "Rift of the Necrodancer": "0.17.0"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Rimworld": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "AnomalyEnabled": {
+     "enabled": "banned"
+    },
+    "AnomalyItemWeight": {
+     "bottom": "banned"
+    },
+    "BasicResearchLocationCount": {
+     "bottom": "banned"
+    },
+    "BiotechEnabled": {
+     "enabled": "banned"
+    },
+    "BonusResearchItems": {
+     "min": "banned"
+    },
+    "ColonistItemCount": {
+     "bottom": "banned"
+    },
+    "CraftLocationCount": {
+     "bottom": "banned"
+    },
+    "DeathLink": {
+     "false": "banned"
+    },
+    "ExtraMonumentStatueCount": {
+     "min": "banned"
+    },
+    "HardToMakeItemWeight": {
+     "bottom": "banned"
+    },
+    "HiTechResearchLocationCount": {
+     "bottom": "banned"
+    },
+    "IdeologyEnabled": {
+     "enabled": "banned"
+    },
+    "IndustrialItemWeight": {
+     "bottom": "banned"
+    },
+    "MedievalItemWeight": {
+     "middle": "banned"
+    },
+    "MonumentOtherBuildingRequirementCount": {
+     "bottom": "banned"
+    },
+    "MonumentStatueCount": {
+     "bottom": "banned"
+    },
+    "MonumentWealthRequirement": {
+     "bottom": "banned"
+    },
+    "MultiAnalyzerResearchLocationCount": {
+     "bottom": "banned"
+    },
+    "NeolithicItemWeight": {
+     "middle": "banned"
+    },
+    "OdysseyEnabled": {
+     "enabled": "banned"
+    },
+    "PercentFillerAsTraps": {
+     "min": "banned"
+    },
+    "PlayerNamesAsColonistItems": {
+     "enabled": "banned"
+    },
+    "QuestLocationCount": {
+     "bottom": "banned"
+    },
+    "RaidLocationCount": {
+     "bottom": "banned"
+    },
+    "RaidTrapCount": {
+     "min": "banned"
+    },
+    "ResearchBaseCost": {
+     "bottom": "banned"
+    },
+    "ResearchCostIncreasePerTier": {
+     "bottom": "banned"
+    },
+    "ResearchCostVariance": {
+     "bottom": "banned"
+    },
+    "ResearchMaxPrerequisites": {
+     "max": "banned"
+    },
+    "ResearchScoutSecretTraps": {
+     "off": "banned"
+    },
+    "ResearchScoutType": {
+     "summary_available": "banned"
+    },
+    "RoyaltyEnabled": {
+     "enabled": "banned"
+    },
+    "SpacerItemWeight": {
+     "bottom": "banned"
+    },
+    "StartingResearchLevel": {
+     "none": "banned"
+    },
+    "TradeLocationCount": {
+     "middle": "banned"
+    },
+    "VictoryCondition": {
+     "any": "banned"
+    }
+   },
+   "options": {
+    "AnomalyEnabled": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "AnomalyItemWeight": {
+     "aliases": {},
+     "default": "10",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "BasicResearchLocationCount": {
+     "aliases": {},
+     "default": "35",
+     "high": 200,
+     "kind": "range",
+     "low": 10
+    },
+    "BiotechEnabled": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "BonusResearchItems": {
+     "aliases": {},
+     "default": "0",
+     "high": 10,
+     "kind": "range",
+     "low": -1
+    },
+    "ColonistItemCount": {
+     "aliases": {},
+     "default": "5",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "CraftLocationCount": {
+     "aliases": {},
+     "default": "51",
+     "high": 400,
+     "kind": "range",
+     "low": 0
+    },
+    "DeathLink": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "ExtraMonumentStatueCount": {
+     "aliases": {},
+     "default": "0",
+     "high": 30,
+     "kind": "range",
+     "low": 0
+    },
+    "HardToMakeItemWeight": {
+     "aliases": {},
+     "default": "1",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "HiTechResearchLocationCount": {
+     "aliases": {},
+     "default": "35",
+     "high": 200,
+     "kind": "range",
+     "low": 0
+    },
+    "IdeologyEnabled": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "IndustrialItemWeight": {
+     "aliases": {},
+     "default": "30",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "MedievalItemWeight": {
+     "aliases": {},
+     "default": "60",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "MonumentOtherBuildingRequirementCount": {
+     "aliases": {},
+     "default": "5",
+     "high": 20,
+     "kind": "range",
+     "low": 0
+    },
+    "MonumentStatueCount": {
+     "aliases": {},
+     "default": "5",
+     "high": 30,
+     "kind": "range",
+     "low": 1
+    },
+    "MonumentWealthRequirement": {
+     "aliases": {},
+     "default": "10000",
+     "high": 350000,
+     "kind": "range",
+     "low": 0
+    },
+    "MultiAnalyzerResearchLocationCount": {
+     "aliases": {},
+     "default": "35",
+     "high": 200,
+     "kind": "range",
+     "low": 0
+    },
+    "NeolithicItemWeight": {
+     "aliases": {},
+     "default": "60",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "OdysseyEnabled": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "PercentFillerAsTraps": {
+     "aliases": {},
+     "default": "20",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "PlayerNamesAsColonistItems": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "QuestLocationCount": {
+     "aliases": {},
+     "default": "5",
+     "high": 30,
+     "kind": "range",
+     "low": 0
+    },
+    "RaidLocationCount": {
+     "aliases": {},
+     "default": "10",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "RaidTrapCount": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "ResearchBaseCost": {
+     "aliases": {},
+     "default": "500",
+     "high": 8000,
+     "kind": "range",
+     "low": 10
+    },
+    "ResearchCostIncreasePerTier": {
+     "aliases": {},
+     "default": "100",
+     "high": 8000,
+     "kind": "range",
+     "low": 0
+    },
+    "ResearchCostVariance": {
+     "aliases": {},
+     "default": "1000",
+     "high": 8000,
+     "kind": "range",
+     "low": 0
+    },
+    "ResearchMaxPrerequisites": {
+     "aliases": {},
+     "default": "3",
+     "high": 3,
+     "kind": "range",
+     "low": 0
+    },
+    "ResearchScoutSecretTraps": {
+     "default": "off",
+     "kind": "choice",
+     "values": [
+      "off",
+      "on"
+     ]
+    },
+    "ResearchScoutType": {
+     "default": "fullitem_available",
+     "kind": "choice",
+     "values": [
+      "none",
+      "summary_available",
+      "fullitem_available",
+      "summary_all",
+      "fullitem_all"
+     ]
+    },
+    "RoyaltyEnabled": {
+     "default": "disabled",
+     "kind": "choice",
+     "values": [
+      "disabled",
+      "enabled"
+     ]
+    },
+    "SpacerItemWeight": {
+     "aliases": {},
+     "default": "10",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "StartingResearchLevel": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "tribal",
+      "crashlanded"
+     ]
+    },
+    "TradeLocationCount": {
+     "aliases": {},
+     "default": "10",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "VictoryCondition": {
+     "default": "ship_launch",
+     "kind": "choice",
+     "values": [
+      "any",
+      "ship_launch",
+      "royalty",
+      "archonexus",
+      "anomaly",
+      "monument"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Rimworld": "1.0.0"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Sekiro: Shadows Die Twice": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "additional_region_locks": {
+     "true": "banned"
+    },
+    "balanced_endgame_boss_phases": {
+     "true": "banned"
+    },
+    "carpsanity": {
+     "true": "banned"
+    },
+    "death_link": {
+     "any_death": "banned"
+    },
+    "enemy_randomizer": {
+     "true": "banned"
+    },
+    "excluded_location_behavior": {
+     "forbid_useful": "banned"
+    },
+    "goal_option": {
+     "full_game": "banned"
+    },
+    "missable_location_behavior": {
+     "forbid_useful": "banned"
+    },
+    "quick_hirata": {
+     "early_local": "banned"
+    },
+    "random_enemy_preset": {
+     "dict": "provisional"
+    },
+    "randomize_bosses": {
+     "true": "banned"
+    },
+    "randomize_headless": {
+     "true": "banned"
+    },
+    "randomize_minibosses": {
+     "true": "banned"
+    },
+    "randomize_regular_enemies": {
+     "true": "banned"
+    },
+    "randomize_skills_and_prosthetics": {
+     "true": "banned"
+    },
+    "remove_headless_slow_walk": {
+     "true": "banned"
+    },
+    "replace_esoteric_texts_with_skills": {
+     "true": "banned"
+    },
+    "scale_enemies": {
+     "true": "banned"
+    },
+    "similar_boss_phases": {
+     "true": "banned"
+    },
+    "simple_early_minibosses": {
+     "true": "banned"
+    },
+    "very_early_hirata": {
+     "false": "banned"
+    }
+   },
+   "options": {
+    "additional_region_locks": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "balanced_endgame_boss_phases": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "carpsanity": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link": {
+     "default": "off",
+     "kind": "choice",
+     "values": [
+      "off",
+      "full_death",
+      "any_death"
+     ]
+    },
+    "enemy_randomizer": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "excluded_location_behavior": {
+     "default": "forbid_useful",
+     "kind": "choice",
+     "values": [
+      "allow_useful",
+      "forbid_useful",
+      "do_not_randomize"
+     ]
+    },
+    "goal_option": {
+     "default": "full_game",
+     "kind": "choice",
+     "values": [
+      "full_game",
+      "shura"
+     ]
+    },
+    "missable_location_behavior": {
+     "default": "forbid_useful",
+     "kind": "choice",
+     "values": [
+      "allow_useful",
+      "forbid_useful",
+      "do_not_randomize"
+     ]
+    },
+    "quick_hirata": {
+     "default": "off",
+     "kind": "choice",
+     "values": [
+      "off",
+      "early_global",
+      "early_local"
+     ]
+    },
+    "random_enemy_preset": {
+     "kind": "DICT"
+    },
+    "randomize_bosses": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "randomize_headless": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "randomize_minibosses": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "randomize_regular_enemies": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "randomize_skills_and_prosthetics": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "remove_headless_slow_walk": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "replace_esoteric_texts_with_skills": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "scale_enemies": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "similar_boss_phases": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "simple_early_minibosses": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "very_early_hirata": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Sekiro: Shadows Die Twice": "1.0.1"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "The Legend of Zelda": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "DialogSpeed": {
+     "vanilla": "banned"
+    },
+    "ExpandedPool": {
+     "true": "banned"
+    },
+    "StartingPosition": {
+     "very_dangerous": "banned"
+    },
+    "TriforceLocations": {
+     "anywhere": "banned"
+    }
+   },
+   "options": {
+    "DialogSpeed": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "fast",
+      "faster"
+     ]
+    },
+    "ExpandedPool": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "StartingPosition": {
+     "default": "safe",
+     "kind": "choice",
+     "values": [
+      "safe",
+      "unsafe",
+      "dangerous",
+      "very_dangerous"
+     ]
+    },
+    "TriforceLocations": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "dungeons",
+      "anywhere"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "The Legend of Zelda": "1.0.0"
+    },
+    "version": "0.6.8"
+   }
+  }
+ },
+ "generated": "2026-11-07",
+ "ignored": [
+  "accessibility",
+  "exclude_locations",
+  "item_links",
+  "local_items",
+  "non_local_items",
+  "plando_items",
+  "priority_locations",
+  "progression_balancing",
+  "start_hints",
+  "start_inventory",
+  "start_inventory_from_pool",
+  "start_location_hints"
+ ],
+ "progression_aliases": {
+  "disabled": 0,
+  "extreme": 99,
+  "normal": 50
+ },
+ "progression_cap": 50
+}

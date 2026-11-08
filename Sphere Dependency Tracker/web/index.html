@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sphere Dependency Tracker</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top"><h1>Sphere Dependency Tracker</h1></header>
+  <main>
+    <section>
+      <h2>Rooms</h2>
+      <ul id="rooms" class="room-list"></ul>
+    </section>
+  </main>
+  <script>
+    fetch("/api/rooms").then(r => r.json()).then(rooms => {
+      const ul = document.getElementById("rooms");
+      if (!rooms.length) ul.textContent = "No rooms configured. Add one to rooms.json.";
+      for (const r of rooms) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "/r/" + encodeURIComponent(r.slug);
+        a.textContent = r.title;
+        li.append(a, " ", Object.assign(document.createElement("span"), {className: "muted", textContent: r.phase}));
+        ul.append(li);
+      }
+    });
+  </script>
+</body>
+</html>

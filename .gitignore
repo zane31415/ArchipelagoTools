@@ -1,0 +1,20 @@
+# This repository is public, and docs/ is served on GitHub Pages.
+# Ignore everything by default so player yamls, ban csvs, spoilers, the tracker's rooms.json
+# (it holds admin tokens), .venv and vendor/ never get in. Then allow the site and the tool code.
+/*
+!/.gitignore
+!/README.md
+!/ban_tool.py
+!/docs/
+
+!/Sphere Dependency Tracker/
+/Sphere Dependency Tracker/*
+!/Sphere Dependency Tracker/README.md
+!/Sphere Dependency Tracker/export_bundle.py
+!/Sphere Dependency Tracker/live_report.py
+!/Sphere Dependency Tracker/test_engine.py
+!/Sphere Dependency Tracker/verify_regen.py
+!/Sphere Dependency Tracker/sdt/
+!/Sphere Dependency Tracker/web/
+
+__pycache__/

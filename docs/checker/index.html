@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Async Setting Checker</title>
+<meta name="description" content="Check which of your Archipelago yaml settings the async's ban list will force to random.">
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --surface-2: #efede6; --text: #1f1d1a; --muted: #6b665d;
+    --border: #dcd8ce; --accent: #2f5d8a; --accent-text: #ffffff;
+    --bad: #a23a2c; --bad-bg: #fbeae6; --warn: #8a5a00; --warn-bg: #fdf3dc; --good: #2e6b3f; --good-bg: #e6f2e8;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614; --surface: #211f1c; --surface-2: #2a2824; --text: #ece9e2; --muted: #a39e93;
+      --border: #3a3732; --accent: #7fb0e0; --accent-text: #10161c;
+      --bad: #f0907f; --bad-bg: #3a201b; --warn: #e8be6a; --warn-bg: #352a14; --good: #8fcf9f; --good-bg: #1c3123;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614; --surface: #211f1c; --surface-2: #2a2824; --text: #ece9e2; --muted: #a39e93;
+    --border: #3a3732; --accent: #7fb0e0; --accent-text: #10161c;
+    --bad: #f0907f; --bad-bg: #3a201b; --warn: #e8be6a; --warn-bg: #352a14; --good: #8fcf9f; --good-bg: #1c3123;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 920px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.75rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; }
+  h3 { font-size: 1.05rem; margin: 0; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.875rem; }
+  code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.9em; }
+
+  .drop {
+    display: block; border: 2px dashed var(--border); border-radius: 12px; background: var(--surface);
+    padding: 28px 16px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s;
+  }
+  .drop:hover, .drop.over { border-color: var(--accent); background: var(--surface-2); }
+  .drop strong { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+  .drop input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  details.paste { margin-top: 12px; }
+  details.paste summary { cursor: pointer; color: var(--accent); }
+  textarea {
+    width: 100%; min-height: 160px; margin-top: 8px; padding: 10px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+    font: 0.875rem/1.4 ui-monospace, Consolas, monospace;
+  }
+  button, select {
+    font: inherit; border-radius: 8px; padding: 8px 14px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text);
+  }
+  button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); cursor: pointer; margin-top: 8px; }
+  select { width: 100%; max-width: 420px; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-top: 16px; }
+  .card-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
+  .pill { font-size: 0.8rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+  .pill.bad { background: var(--bad-bg); color: var(--bad); }
+  .pill.warn { background: var(--warn-bg); color: var(--warn); }
+  .pill.good { background: var(--good-bg); color: var(--good); }
+  .note { border-radius: 8px; padding: 10px 12px; margin: 8px 0; font-size: 0.925rem; }
+  .note.bad { background: var(--bad-bg); color: var(--bad); }
+  .note.warn { background: var(--warn-bg); color: var(--warn); }
+  .note.good { background: var(--good-bg); color: var(--good); }
+  .section-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 16px 0 6px; }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 0.8rem; }
+  td.setting { font-family: ui-monospace, Consolas, monospace; font-size: 0.85rem; overflow-wrap: anywhere; min-width: 10rem; }
+  .tag { display: inline-block; font-size: 0.78rem; padding: 1px 7px; border-radius: 6px; margin: 1px 3px 1px 0; background: var(--surface-2); }
+  .tag.bad { background: var(--bad-bg); color: var(--bad); }
+  .tag.warn { background: var(--warn-bg); color: var(--warn); }
+  details.flags summary { cursor: pointer; color: var(--muted); font-size: 0.875rem; margin-top: 12px; }
+  details.flags ul { margin: 6px 0 0; padding-left: 20px; font-size: 0.875rem; color: var(--muted); }
+  .rules { padding-left: 20px; margin: 0; }
+  .rules li { margin-bottom: 6px; }
+  .progress { display: flex; align-items: center; gap: 10px; margin: 8px 0 12px; font-size: 0.9rem; }
+  .bar { flex: 1; max-width: 240px; height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--bad); }
+
+  .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0 4px; }
+  .fields label { display: flex; flex-direction: column; gap: 4px; font-size: 0.875rem; color: var(--muted); }
+  input[type="text"], input[type="number"] {
+    font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px; width: 100%;
+  }
+  input:disabled { color: var(--muted); background: var(--surface-2); }
+  input.invalid { border-color: var(--bad); }
+  .builder table { min-width: 0; table-layout: fixed; }
+  .builder td.setting { min-width: 0; width: 45%; }
+  td.value { display: flex; flex-direction: column; gap: 6px; }
+  td select { max-width: none; padding: 6px 8px; }
+  td input[type="number"] { padding: 6px 8px; }
+  td .field-error { color: var(--bad); font-size: 0.8rem; margin-top: 2px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-top: 16px; }
+  .actions button.primary { margin-top: 0; }
+  button.primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  pre.preview {
+    background: var(--surface-2); border-radius: 8px; padding: 10px 12px; overflow-x: auto; margin: 8px 0 0;
+    font: 0.825rem/1.45 ui-monospace, Consolas, monospace; max-height: 420px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Async Setting Checker</h1>
+  <p class="muted">Check which of your yaml's settings the ban list will force to random. Your files are read in your browser and never uploaded.</p>
+  <p class="muted small" id="data-status">Loading the ban list…</p>
+
+  <label class="drop" id="drop">
+    <input type="file" id="files" accept=".yaml,.yml,.txt" multiple>
+    <strong>Drop yamls here or click to choose</strong>
+    <span class="muted small">You can check several at once.</span>
+  </label>
+  <details class="paste">
+    <summary>Or paste a yaml</summary>
+    <textarea id="paste" spellcheck="false" placeholder="name: Player&#10;game: ..."></textarea>
+    <button class="primary" id="check-paste" type="button">Check pasted yaml</button>
+  </details>
+
+  <div id="results" aria-live="polite"></div>
+
+  <h2>Browse bans by game</h2>
+  <p class="muted small">Pick values that are still open to keep your settings.</p>
+  <select id="game-select" aria-label="Game"><option value="">Choose a game…</option></select>
+  <div id="game-view"></div>
+
+  <h2>Build a yaml</h2>
+  <p class="muted small">Pick a game, then choose from the values that haven't been banned (or random). Download the yaml when you're done.</p>
+  <select id="build-select" aria-label="Game to build a yaml for"><option value="">Choose a game…</option></select>
+  <div id="build-view"></div>
+
+  <h2>How bans work</h2>
+  <ul class="rules">
+    <li>Once a setting value has been played, later yamls using that value get it set to <code>random</code>. Leaving a setting out counts as using its default.</li>
+    <li>Number ranges ban by area: the minimum, the maximum, or the bottom, middle or top third of the values in between.</li>
+    <li><code>random</code>, or equal weights on every value, bans nothing. Other weighted or narrowed randoms count as every value they can land on.</li>
+    <li><code>progression_balancing</code> is capped at 50. <code>accessibility</code> and item and location lists are never banned.</li>
+    <li>"Pending review" settings are still being judged by the host and may end up forced random.</li>
+  </ul>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<!-- Bump ?v= whenever checker.js changes, so browsers don't keep running a cached old copy. -->
+<script src="checker.js?v=2"></script>
+<script>
+(function () {
+  "use strict";
+  let data = null;
+  const $ = (id) => document.getElementById(id);
+
+  function el(tag, attrs, ...children) {
+    const node = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (k === "class") node.className = v; else node.setAttribute(k, v);
+    }
+    for (const child of children.flat(Infinity)) {
+      if (child === null || child === undefined || child === false) continue;
+      node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+    }
+    return node;
+  }
+
+  function tags(option, buckets, cls) {
+    return buckets.map((b) => el("span", { class: "tag" + (cls ? " " + cls : "") }, BanChecker.describeBucket(option, b)));
+  }
+
+  function table(headers, rows) {
+    return el("div", { class: "table-wrap" },
+      el("table", {}, el("thead", {}, el("tr", {}, headers.map((h) => el("th", {}, h)))),
+        el("tbody", {}, rows)));
+  }
+
+  function renderReport(report, fileLabel, gameData) {
+    const title = report.name || fileLabel;
+    const sub = [report.game, report.name && fileLabel !== report.name ? fileLabel : null].filter(Boolean).join(" · ");
+    let pill;
+    if (report.error) pill = el("span", { class: "pill warn" }, "Can't check");
+    else if (report.forced.length) pill = el("span", { class: "pill bad" }, `${report.forced.length} forced random`);
+    else pill = el("span", { class: "pill good" }, "Nothing forced");
+
+    const card = el("section", { class: "card" },
+      el("div", { class: "card-head" }, el("div", {}, el("h3", {}, title), sub && el("div", { class: "muted small" }, sub)), pill));
+
+    if (report.error) card.append(el("div", { class: "note warn" }, report.error));
+    if (report.fullyBanned) card.append(el("div", { class: "note bad" }, `${report.game} is fully banned: every setting value has been used.`));
+    if (!report.error && report.known && report.specified === 0) {
+      card.append(el("div", { class: "note bad" }, "No specified settings remain: every counted setting would be random. The host will flag this yaml."));
+    }
+    if (!report.error && report.game && !report.known) {
+      card.append(el("div", { class: "note good" }, `No bans are recorded for ${report.game} yet, so nothing will be forced random.`));
+    }
+    for (const alert of report.alerts) card.append(el("div", { class: "note warn" }, alert));
+    if (report.capped !== null) {
+      card.append(el("div", { class: "note warn" }, `progression_balancing is over the cap and will be set to ${report.capped}.`));
+    }
+
+    if (report.forced.length) {
+      card.append(el("div", { class: "section-label" }, "Forced to random"));
+      card.append(table(["Setting", "Your value", "Banned", "Still open"], report.forced.map((f) => {
+        const open = BanChecker.openBuckets(gameData, f.option);
+        return el("tr", {},
+          el("td", { class: "setting" }, f.setting),
+          el("td", {}, f.original),
+          el("td", {}, tags(f.option, f.banned, "bad")),
+          el("td", {}, open.length ? tags(f.option, open) : el("span", { class: "muted" }, "none")));
+      })));
+    }
+    if (report.provisional.length) {
+      card.append(el("div", { class: "section-label" }, "Pending review: kept for now, may be forced later"));
+      card.append(table(["Setting", "Your value"], report.provisional.map((p) =>
+        el("tr", {}, el("td", { class: "setting" }, p.setting),
+          el("td", {}, p.option ? [p.original + " ", tags(p.option, p.buckets, "warn")] : "list or text setting")))));
+    }
+    if (report.handEdit.length) {
+      card.append(el("div", { class: "note warn" }, `The host will change these by hand: ${report.handEdit.join(", ")}.`));
+    }
+    if (report.warnings.length) {
+      card.append(el("details", { class: "flags" }, el("summary", {}, `${report.warnings.length} other notes`),
+        el("ul", {}, report.warnings.map((w) => el("li", {}, w)))));
+    }
+    return card;
+  }
+
+  function unreadable(message, label) {
+    return renderReport({ error: message, capped: null, forced: [], provisional: [], handEdit: [], alerts: [], warnings: [] }, label);
+  }
+
+  function checkText(text, label) {
+    let docs;
+    try {
+      docs = jsyaml.loadAll(text, null, { json: true }).filter((d) => d !== null && d !== undefined);
+    } catch (error) {
+      return [unreadable(`Couldn't read this yaml: ${error.reason || error.message}`, label)];
+    }
+    if (!docs.length) return [unreadable("This file is empty.", label)];
+    return docs.map((doc) => {
+      const report = BanChecker.checkDocument(doc, data);
+      return renderReport(report, label, data.games[report.game]);
+    });
+  }
+
+  function show(cards) {
+    $("results").replaceChildren(...cards);
+  }
+
+  async function checkFiles(fileList) {
+    if (!data) return;
+    const cards = [];
+    for (const file of fileList) cards.push(...checkText(await file.text(), file.name));
+    show(cards);
+  }
+
+  function renderGame(name) {
+    const view = $("game-view");
+    if (!name) { view.replaceChildren(); return; }
+    const game = data.games[name];
+    if (!game.options) {
+      view.replaceChildren(el("div", { class: "note warn" }, "The host has no template for this game yet."));
+      return;
+    }
+    const progress = BanChecker.gameProgress(game);
+    const pct = progress.counted ? Math.round((100 * progress.finished) / progress.counted) : 0;
+    const rows = BanChecker.counted(game)
+      .filter((o) => game.bans[o.name])
+      .map((o) => {
+        const all = BanChecker.bucketsOf(o);
+        const banned = all.filter((b) => BanChecker.stateOf(game, o.name, b) === "banned");
+        const pending = all.filter((b) => BanChecker.stateOf(game, o.name, b) === "provisional");
+        const open = BanChecker.openBuckets(game, o).filter((b) => !pending.includes(b));
+        return el("tr", {},
+          el("td", { class: "setting" }, o.name),
+          el("td", {}, banned.length ? tags(o, banned, "bad") : el("span", { class: "muted" }, "none")),
+          el("td", {}, pending.length ? tags(o, pending, "warn") : el("span", { class: "muted" }, "none")),
+          el("td", {}, open.length ? tags(o, open) : el("span", { class: "muted" }, "none, always random")));
+      });
+    const untouched = BanChecker.counted(game).length - rows.length;
+    view.replaceChildren(...[
+      el("div", { class: "progress" }, el("div", { class: "bar" }, el("span", { style: `width:${pct}%` })),
+        `${progress.finished} of ${progress.counted} settings used up`),
+      progress.counted && progress.finished === progress.counted ? el("div", { class: "note bad" }, "This game is fully banned.") : null,
+      table(["Setting", "Banned", "Pending review", "Still open"], rows),
+      untouched > 0 ? el("p", { class: "muted small" }, `${untouched} other settings have no bans yet.`) : null,
+    ].filter(Boolean));
+  }
+
+  // --- yaml builder ---------------------------------------------------------
+
+  const NOT_BUILDABLE = "This game is not valid for auto-generation, but you can still use the checker above to validate a yaml for it.";
+  const NAME_LIMIT = 16;
+
+  function rangeNumber(option, value) {
+    if (value === null || value === undefined) return null;
+    const key = String(value).toLowerCase();
+    if (key in option.aliases) return option.aliases[key];
+    return /^-?\d+$/.test(key) ? parseInt(key, 10) : null;
+  }
+
+  // One table row per counted setting. read() gives {value} for the yaml or {error}.
+  function settingRow(game, option) {
+    const allowed = BanChecker.bucketsOf(option).filter((b) => BanChecker.stateOf(game, option.name, b) !== "banned");
+    const select = el("select", { "aria-label": option.name }, el("option", { value: "random" }, "random"));
+    const number = el("input", { type: "number", step: "1", "aria-label": `${option.name} value` });
+    const error = el("div", { class: "field-error" });
+    let preset = "random", presetNumber = null;
+
+    if (option.kind === "choice") {
+      const fallback = String(option.default).toLowerCase();
+      for (const value of option.values) {
+        const key = String(value).toLowerCase();
+        if (!allowed.includes(key)) continue;
+        const notes = [key === fallback ? "default" : null,
+          BanChecker.stateOf(game, option.name, key) === "provisional" ? "pending review" : null].filter(Boolean);
+        select.append(el("option", { value: key }, notes.length ? `${value} (${notes.join(", ")})` : String(value)));
+        if (key === fallback) preset = key;
+      }
+    } else {
+      const fallback = rangeNumber(option, option.default);
+      for (const bucket of allowed) {
+        const pending = BanChecker.stateOf(game, option.name, bucket) === "provisional";
+        select.append(el("option", { value: bucket }, BanChecker.describeBucket(option, bucket) + (pending ? " (pending review)" : "")));
+      }
+      if (fallback !== null) {
+        const home = [...BanChecker.bucketsBetween(option, fallback, fallback)][0];
+        if (allowed.includes(home)) { preset = home; presetNumber = fallback; }
+      }
+    }
+    select.value = preset;
+
+    function syncNumber(keep) {
+      const bucket = select.value;
+      if (option.kind !== "range" || bucket === "random") {
+        number.hidden = true;
+        return;
+      }
+      const [from, to] = BanChecker.bucketBounds(option, bucket);
+      number.hidden = false;
+      number.min = from; number.max = to;
+      number.disabled = from === to;
+      const current = parseInt(number.value, 10);
+      if (!keep || !(current >= from && current <= to)) {
+        number.value = presetNumber !== null && presetNumber >= from && presetNumber <= to ? presetNumber : from;
+      }
+    }
+    syncNumber(false);
+    select.addEventListener("change", () => syncNumber(false));
+
+    function read() {
+      error.textContent = "";
+      number.classList.remove("invalid");
+      if (select.value === "random") return { value: "random", random: true };
+      if (option.kind === "choice") {
+        return { value: option.values.find((v) => String(v).toLowerCase() === select.value) };
+      }
+      const [from, to] = BanChecker.bucketBounds(option, select.value);
+      const text = number.value.trim();
+      const n = /^-?\d+$/.test(text) ? parseInt(text, 10) : NaN;
+      if (!(n >= from && n <= to)) {
+        error.textContent = `Enter a whole number from ${from} to ${to}.`;
+        number.classList.add("invalid");
+        return { error: `${option.name}: enter a whole number from ${from} to ${to}.` };
+      }
+      return { value: n };
+    }
+
+    const row = el("tr", {},
+      el("td", { class: "setting" }, option.name),
+      el("td", { class: "value" }, select, option.kind === "range" ? [number, error] : null));
+    return { name: option.name, row, read, controls: [select, number], hasChoice: allowed.length > 0 };
+  }
+
+  function renderBuilder(name) {
+    const view = $("build-view");
+    if (!name) { view.replaceChildren(); return; }
+    const game = data.games[name];
+    if (!game.options) {
+      view.replaceChildren(el("div", { class: "note warn" }, NOT_BUILDABLE, " (The host has no template for it yet.)"));
+      return;
+    }
+    const rows = BanChecker.counted(game).map((o) => settingRow(game, o));
+    if (!rows.some((r) => r.hasChoice)) {
+      view.replaceChildren(el("div", { class: "note bad" }, NOT_BUILDABLE,
+        " Every setting value has been banned, so any yaml would be all random."));
+      return;
+    }
+
+    const playerName = el("input", { type: "text", maxlength: String(NAME_LIMIT), placeholder: "Your slot name", autocomplete: "off" });
+    const description = el("input", { type: "text", placeholder: "Optional" });
+    const balancing = el("input", { type: "number", min: "0", max: String(data.progression_cap), step: "1", value: String(data.progression_cap) });
+    const fields = [
+      el("label", {}, `Player name (up to ${NAME_LIMIT} characters)`, playerName),
+      el("label", {}, "Description", description),
+      el("label", {}, `progression_balancing (0-${data.progression_cap})`, balancing),
+    ];
+    let accessibility = null;
+    if (game.accessibility) {
+      accessibility = el("select", {}, game.accessibility.values.map((v) => el("option", { value: v }, String(v))));
+      accessibility.value = game.accessibility.default;
+      fields.push(el("label", {}, "accessibility", accessibility));
+    }
+
+    const leftOut = Object.entries(game.options).filter(([, o]) => o.kind !== "choice" && o.kind !== "range").map(([n]) => n);
+    const status = el("div", { "aria-live": "polite" });
+    const download = el("button", { class: "primary", type: "button" }, "Download yaml");
+    const preview = el("pre", { class: "preview" });
+    let current = null;
+
+    function update() {
+      const errors = [];
+      const player = playerName.value.trim();
+      if (!player) errors.push("Enter a player name.");
+      const pb = balancing.value.trim();
+      const pbNumber = /^\d+$/.test(pb) ? parseInt(pb, 10) : NaN;
+      balancing.classList.toggle("invalid", !(pbNumber >= 0 && pbNumber <= data.progression_cap));
+      if (balancing.classList.contains("invalid")) errors.push(`progression_balancing must be a whole number from 0 to ${data.progression_cap}.`);
+
+      const settings = { progression_balancing: pbNumber >= 0 ? pbNumber : data.progression_cap };
+      if (accessibility) settings.accessibility = accessibility.value;
+      let chosen = 0;
+      for (const r of rows) {
+        const result = r.read();
+        if (result.error) { errors.push(result.error); continue; }
+        if (!result.random) chosen += 1;
+        settings[r.name] = result.value;
+      }
+      if (chosen === 0) errors.push("Every setting is random. Pick a value for at least one, or the host will flag the yaml.");
+
+      const doc = { name: player || "Player", description: description.value.trim() || `${name} yaml made with the Async Setting Checker`, game: name };
+      if (game.requires) doc.requires = Object.assign({ version: game.requires.version }, game.requires);
+      doc[name] = settings;
+      const text = `# Made with the Async Setting Checker, using the ban list from ${data.generated}.\n`
+        + jsyaml.dump(doc, { lineWidth: -1, noRefs: true, sortKeys: false });
+
+      // Run the result back through the checker as a safety net.
+      const report = BanChecker.checkDocument(jsyaml.load(text, { json: true }), data);
+      if (report.forced.length) errors.push(`These would still be forced random: ${report.forced.map((f) => f.setting).join(", ")}.`);
+      if (report.capped !== null) errors.push("progression_balancing is over the cap.");
+
+      preview.textContent = text;
+      download.disabled = errors.length > 0;
+      current = errors.length ? null : { text, file: `${player.replace(/[^\w\- ]+/g, "_")}.yaml` };
+      const pending = report.provisional.length;
+      status.replaceChildren(...[
+        errors.length ? el("div", { class: "note bad" }, el("ul", { class: "rules" }, errors.map((e) => el("li", {}, e)))) : null,
+        !errors.length ? el("div", { class: "note good" }, `Ready: ${chosen} of ${rows.length} settings chosen, nothing will be forced random.`) : null,
+        pending ? el("div", { class: "note warn" }, `${pending} chosen value${pending === 1 ? " is" : "s are"} pending review and could still be forced random later.`) : null,
+      ].filter(Boolean));
+    }
+
+    download.addEventListener("click", () => {
+      if (!current) return;
+      const url = URL.createObjectURL(new Blob([current.text], { type: "text/yaml" }));
+      const link = el("a", { href: url, download: current.file });
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+    // A fresh container each time, so switching games doesn't stack up listeners.
+    const box = el("div", {});
+    box.addEventListener("input", update);
+    box.addEventListener("change", update);
+    view.replaceChildren(box);
+
+    box.replaceChildren(...[
+      el("div", { class: "fields" }, fields),
+      leftOut.length ? el("div", { class: "note warn" },
+        `${leftOut.length} list or text setting${leftOut.length === 1 ? " is" : "s are"} left out, so ${leftOut.length === 1 ? "it uses its" : "they use their"} default. Edit the file by hand if you need them: ${leftOut.join(", ")}.`) : null,
+      el("div", { class: "builder" }, table(["Setting", "Value"], rows.map((r) => r.row))),
+      el("div", { class: "actions" }, download, el("span", { class: "muted small" }, "Banned values aren't listed. Random always works.")),
+      status,
+      el("details", { class: "flags" }, el("summary", {}, "Preview the yaml"), preview),
+    ].filter(Boolean));
+    update();
+  }
+
+  const drop = $("drop");
+  $("files").addEventListener("change", (e) => { checkFiles(e.target.files); e.target.value = ""; });
+  ["dragenter", "dragover"].forEach((t) => drop.addEventListener(t, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach((t) => drop.addEventListener(t, () => drop.classList.remove("over")));
+  drop.addEventListener("drop", (e) => { e.preventDefault(); checkFiles(e.dataTransfer.files); });
+  $("check-paste").addEventListener("click", () => { if (data) show(checkText($("paste").value, "Pasted yaml")); });
+  $("game-select").addEventListener("change", (e) => renderGame(e.target.value));
+  $("build-select").addEventListener("change", (e) => renderBuilder(e.target.value));
+
+  fetch("ban_data.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((json) => {
+      data = json;
+      const names = Object.keys(data.games).sort((a, b) => a.localeCompare(b));
+      $("data-status").textContent = `Ban list updated ${data.generated}. Covers ${names.length} games.`;
+      $("game-select").append(...names.map((n) => el("option", { value: n }, n)));
+      $("build-select").append(...names.map((n) => el("option", { value: n }, n)));
+    })
+    .catch(() => {
+      $("data-status").textContent = "Couldn't load the ban list (ban_data.json). If you opened this file directly, serve it from a web server instead.";
+    });
+})();
+</script>
+</body>
+</html>
