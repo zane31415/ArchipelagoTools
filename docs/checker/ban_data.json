@@ -5721,15 +5721,20 @@
    },
    "bans": {
     "allow_milk_rate_adjustment": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "censorship_mode": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "checks_per_ingredient": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "middle": "banned",
+     "min": "banned"
     },
     "death_link": {
+     "false": "banned",
      "true": "banned"
     },
     "death_link_penalty": {
@@ -5739,28 +5744,39 @@
      "good": "banned"
     },
     "drinks_per_check": {
-     "max": "banned"
+     "bottom": "banned",
+     "max": "banned",
+     "top": "banned"
     },
     "extra_candy": {
+     "bottom": "banned",
      "min": "banned"
     },
     "milk_flow": {
+     "bottom": "banned",
      "min": "banned"
     },
     "min_drink_quality": {
+     "good": "banned",
      "great": "banned"
     },
     "scout_shop": {
-     "none": "banned"
+     "all": "banned",
+     "none": "banned",
+     "visible": "banned"
     },
     "shop_base_price": {
-     "max": "banned"
+     "max": "banned",
+     "min": "banned",
+     "top": "banned"
     },
     "shop_locations": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "max": "banned"
     },
     "shop_price_step": {
-     "max": "banned"
+     "max": "banned",
+     "min": "banned"
     },
     "starting_ingredients": {
      "list": "provisional"
@@ -5885,6 +5901,249 @@
    "requires": {
     "game": {
      "Cowtastic Cafe": "1.0.2"
+    },
+    "version": "0.6.8"
+   }
+  },
+  "Dicey Dungeons": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "character": {
+     "list": "provisional"
+    },
+    "checks_per_chest": {
+     "bottom": "banned"
+    },
+    "checks_per_shop": {
+     "bottom": "banned"
+    },
+    "checks_per_trade": {
+     "bottom": "banned"
+    },
+    "episode_progression": {
+     "vanilla": "banned"
+    },
+    "equipment_availability": {
+     "open": "banned"
+    },
+    "excluded_equipment": {
+     "list": "provisional"
+    },
+    "inventor_3_remove_rust": {
+     "true": "banned"
+    },
+    "inventor_3_start_with_grindstone": {
+     "true": "banned"
+    },
+    "levelsanity": {
+     "true": "banned"
+    },
+    "randomize_gadgets": {
+     "vanilla": "banned"
+    },
+    "release_episodes_when_completed": {
+     "true": "banned"
+    },
+    "remove_checks_when_sent": {
+     "true": "banned"
+    },
+    "shop_selection": {
+     "vanilla": "banned"
+    },
+    "skip_cutscenes": {
+     "true": "banned"
+    },
+    "split_dice": {
+     "false": "banned"
+    },
+    "upgrade_equipment": {
+     "vanilla": "banned"
+    },
+    "use_equipment_from_any_character": {
+     "false": "banned"
+    },
+    "warrior_2_disable_curse": {
+     "true": "banned"
+    },
+    "warrior_3_remove_hp_decrease_on_level": {
+     "true": "banned"
+    }
+   },
+   "options": {
+    "character": {
+     "kind": "LIST"
+    },
+    "checks_per_chest": {
+     "aliases": {},
+     "default": "1",
+     "high": 5,
+     "kind": "range",
+     "low": 0
+    },
+    "checks_per_shop": {
+     "aliases": {},
+     "default": "2",
+     "high": 5,
+     "kind": "range",
+     "low": 0
+    },
+    "checks_per_trade": {
+     "aliases": {},
+     "default": "1",
+     "high": 5,
+     "kind": "range",
+     "low": 0
+    },
+    "dice_shards_per_die": {
+     "aliases": {},
+     "default": "0",
+     "high": 5,
+     "kind": "range",
+     "low": 0
+    },
+    "episode_progression": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "open_world"
+     ]
+    },
+    "equipment_availability": {
+     "default": "open",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "open"
+     ]
+    },
+    "excluded_equipment": {
+     "kind": "LIST"
+    },
+    "inventor_3_remove_rust": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "inventor_3_start_with_grindstone": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "levelsanity": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "randomize_gadgets": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "filler_only",
+      "all_equipment"
+     ]
+    },
+    "release_episodes_when_completed": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "remove_checks_when_sent": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "shop_selection": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "items_only"
+     ]
+    },
+    "skip_cutscenes": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "spare_dice_shards": {
+     "aliases": {},
+     "default": "0",
+     "high": 12,
+     "kind": "range",
+     "low": 0
+    },
+    "split_dice": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "upgrade_equipment": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "starting_equipment",
+      "all_equipment"
+     ]
+    },
+    "use_equipment_from_any_character": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "warrior_2_disable_curse": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "warrior_3_remove_hp_decrease_on_level": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    }
+   },
+   "requires": {
+    "game": {
+     "Dicey Dungeons": "0.6.0"
     },
     "version": "0.6.8"
    }
@@ -6092,6 +6351,29 @@
     "version": "0.6.8"
    }
   },
+  "Hangman": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "word": {
+     "text": "provisional"
+    }
+   },
+   "options": {
+    "word": {
+     "kind": "TEXT"
+    }
+   },
+   "requires": {
+    "version": "0.6.8"
+   }
+  },
   "MetroCUBEvania": {
    "accessibility": {
     "default": "full",
@@ -6103,18 +6385,22 @@
    },
    "bans": {
     "death_link": {
+     "false": "banned",
      "true": "banned"
     },
     "death_link_amnesty": {
      "bottom": "banned"
     },
     "extra_checkpoint": {
+     "false": "banned",
      "true": "banned"
     },
     "extra_checks": {
+     "false": "banned",
      "true": "banned"
     },
     "medal_hunt": {
+     "false": "banned",
      "true": "banned"
     }
    },
@@ -6174,52 +6460,66 @@
    },
    "bans": {
     "advancement_goal": {
+     "middle": "banned",
      "min": "banned"
     },
     "bee_traps": {
-     "max": "banned"
+     "max": "banned",
+     "middle": "provisional"
     },
     "combat_difficulty": {
-     "easy": "banned"
+     "easy": "banned",
+     "hard": "banned"
     },
     "death_link": {
+     "false": "banned",
      "true": "banned"
     },
     "egg_shards_available": {
+     "middle": "banned",
      "min": "banned"
     },
     "egg_shards_required": {
+     "middle": "banned",
      "min": "banned"
     },
     "immediate_respawn": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "include_hard_advancements": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "include_postgame_advancements": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "include_unreasonable_advancements": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "plando_connections": {
      "list": "provisional"
     },
     "required_bosses": {
+     "ender_dragon": "banned",
      "none": "banned"
     },
     "send_defeated_mobs": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "shuffle_structures": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "starting_items": {
      "list": "provisional"
     },
     "structure_compasses": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     }
    },
    "options": {
@@ -6348,6 +6648,179 @@
     "version": "0.6.8"
    }
   },
+  "Muse Dash": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "additional_song_count": {
+     "min": "banned"
+    },
+    "chosen_traps": {
+     "list": "provisional"
+    },
+    "death_link": {
+     "true": "banned"
+    },
+    "dlc_packs": {
+     "list": "provisional"
+    },
+    "exclude_songs": {
+     "list": "provisional"
+    },
+    "goal_song": {
+     "list": "provisional"
+    },
+    "grade_needed": {
+     "silvers": "banned"
+    },
+    "include_songs": {
+     "list": "provisional"
+    },
+    "music_sheet_count_percentage": {
+     "min": "banned"
+    },
+    "music_sheet_win_count_percentage": {
+     "min": "banned"
+    },
+    "song_difficulty_max": {
+     "max": "banned"
+    },
+    "song_difficulty_min": {
+     "min": "banned"
+    },
+    "song_difficulty_mode": {
+     "manual": "banned"
+    },
+    "starting_song_count": {
+     "min": "banned"
+    },
+    "streamer_mode_enabled": {
+     "true": "banned"
+    },
+    "trap_count_percentage": {
+     "max": "provisional"
+    }
+   },
+   "options": {
+    "additional_song_count": {
+     "aliases": {},
+     "default": "40",
+     "high": 800,
+     "kind": "range",
+     "low": 15
+    },
+    "chosen_traps": {
+     "kind": "LIST"
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "dlc_packs": {
+     "kind": "LIST"
+    },
+    "exclude_songs": {
+     "kind": "LIST"
+    },
+    "goal_song": {
+     "kind": "LIST"
+    },
+    "grade_needed": {
+     "default": "any",
+     "kind": "choice",
+     "values": [
+      "any",
+      "c",
+      "b",
+      "a",
+      "pinks",
+      "silvers"
+     ]
+    },
+    "include_songs": {
+     "kind": "LIST"
+    },
+    "music_sheet_count_percentage": {
+     "aliases": {},
+     "default": "20",
+     "high": 40,
+     "kind": "range",
+     "low": 10
+    },
+    "music_sheet_win_count_percentage": {
+     "aliases": {},
+     "default": "80",
+     "high": 100,
+     "kind": "range",
+     "low": 50
+    },
+    "song_difficulty_max": {
+     "aliases": {},
+     "default": "8",
+     "high": 11,
+     "kind": "range",
+     "low": 1
+    },
+    "song_difficulty_min": {
+     "aliases": {},
+     "default": "4",
+     "high": 11,
+     "kind": "range",
+     "low": 1
+    },
+    "song_difficulty_mode": {
+     "default": "any",
+     "kind": "choice",
+     "values": [
+      "any",
+      "easy",
+      "medium",
+      "hard",
+      "expert",
+      "master",
+      "manual"
+     ]
+    },
+    "starting_song_count": {
+     "aliases": {},
+     "default": "5",
+     "high": 10,
+     "kind": "range",
+     "low": 3
+    },
+    "streamer_mode_enabled": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "trap_count_percentage": {
+     "aliases": {},
+     "default": "15",
+     "high": 35,
+     "kind": "range",
+     "low": 0
+    }
+   },
+   "requires": {
+    "game": {
+     "Muse Dash": "1.5.37"
+    },
+    "version": "0.6.8"
+   }
+  },
   "Quake 1": {
    "accessibility": {
     "default": "full",
@@ -6362,96 +6835,129 @@
      "dict": "provisional"
     },
     "area_maps": {
+     "none": "banned",
      "start_with": "banned"
     },
     "basegame": {
+     "hipnotic": "banned",
      "quake": "banned"
     },
     "custom_included_locations": {
      "dict": "provisional"
     },
     "damage_remover_abilities": {
+     "false": "banned",
      "true": "banned"
     },
     "death_link": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "difficulty": {
+     "easy": "banned",
      "medium": "banned"
     },
     "episode1": {
+     "false": "banned",
      "true": "banned"
     },
     "episode2": {
+     "false": "banned",
      "true": "banned"
     },
     "episode3": {
+     "false": "banned",
      "true": "banned"
     },
     "episode4": {
+     "false": "banned",
      "true": "banned"
     },
     "episode5": {
+     "false": "banned",
      "true": "banned"
     },
     "goal": {
-     "all": "banned"
+     "all": "banned",
+     "beat_all_levels": "banned"
     },
     "goal_percentage": {
-     "max": "banned"
+     "max": "banned",
+     "top": "banned"
     },
     "include_allkills": {
+     "false": "banned",
      "true": "banned"
     },
     "include_end": {
+     "false": "banned",
      "true": "banned"
     },
     "include_hub": {
+     "false": "banned",
      "true": "banned"
     },
     "include_mp_items": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "include_secrets": {
+     "false": "banned",
      "true": "banned"
     },
     "included_locations_preset": {
+     "balanced": "banned",
      "dense": "banned"
     },
     "level_count": {
+     "bottom": "banned",
      "max": "banned"
     },
     "logic_difficulty": {
+     "easy": "banned",
      "medium": "banned"
     },
     "powerup_recharge": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "progressive_inventories": {
+     "false": "banned",
      "true": "banned"
     },
     "progressive_weapons": {
+     "false": "banned",
      "true": "banned"
     },
     "shell_recharge": {
+     "false": "banned",
      "true": "banned"
     },
     "shuffle_starting_levels": {
+     "false": "banned",
      "true": "banned"
     },
     "skill_level": {
+     "easy": "banned",
      "medium": "banned"
     },
     "starting_level_count": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "max": "banned"
     },
     "trap_percentage": {
+     "bottom": "provisional",
      "min": "banned"
     },
+    "traps_as_progressive": {
+     "true": "provisional"
+    },
     "unlock_abilities": {
+     "false": "banned",
      "true": "banned"
     },
     "unlock_interact": {
+     "false": "banned",
      "true": "banned"
     }
    },
@@ -6729,6 +7235,181 @@
     "version": "0.6.8"
    }
   },
+  "Refunct": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "amount_of_grass": {
+     "max": "banned"
+    },
+    "cubes": {
+     "red_cubes_bag": "banned"
+    },
+    "death_link": {
+     "false": "banned"
+    },
+    "effects_and_traps": {
+     "dict": "provisional"
+    },
+    "extra_cubes": {
+     "green_cubes_bag": "banned"
+    },
+    "goal": {
+     "button_31_1": "banned"
+    },
+    "minigames_likeliness": {
+     "dict": "provisional"
+    },
+    "nerf_minigame_checks": {
+     "false": "banned"
+    },
+    "number_of_minigames": {
+     "middle": "banned"
+    },
+    "number_of_unlocks_per_minigame": {
+     "min": "banned"
+    },
+    "rename_flowers": {
+     "none": "banned"
+    },
+    "rename_grass": {
+     "none": "banned"
+    },
+    "required_grass_percentage": {
+     "top": "banned"
+    },
+    "see_other_players": {
+     "min": "banned"
+    }
+   },
+   "options": {
+    "amount_of_grass": {
+     "aliases": {},
+     "default": "100",
+     "high": 160,
+     "kind": "range",
+     "low": 10
+    },
+    "cubes": {
+     "default": "red_cubes_bag",
+     "kind": "choice",
+     "values": [
+      "always",
+      "red_cubes_bag",
+      "never"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "effects_and_traps": {
+     "kind": "DICT"
+    },
+    "extra_cubes": {
+     "default": "green_cubes_bag",
+     "kind": "choice",
+     "values": [
+      "always",
+      "red_cubes_bag",
+      "green_cubes_bag",
+      "never"
+     ]
+    },
+    "goal": {
+     "default": "button_31_1",
+     "kind": "choice",
+     "values": [
+      "button_31_1",
+      "button_1_1",
+      "random_known_button",
+      "random_unknown_button",
+      "platform_1_5",
+      "platform_21_1",
+      "platform_29_2",
+      "random_known_platform",
+      "random_unknown_platform",
+      "random_known",
+      "random_unknown"
+     ]
+    },
+    "minigames_likeliness": {
+     "kind": "DICT"
+    },
+    "nerf_minigame_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "number_of_minigames": {
+     "aliases": {},
+     "default": "7",
+     "high": 18,
+     "kind": "range",
+     "low": -1
+    },
+    "number_of_unlocks_per_minigame": {
+     "aliases": {},
+     "default": "1",
+     "high": 2,
+     "kind": "range",
+     "low": 1
+    },
+    "rename_flowers": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "english",
+      "latin",
+      "both"
+     ]
+    },
+    "rename_grass": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "english",
+      "latin",
+      "both"
+     ]
+    },
+    "required_grass_percentage": {
+     "aliases": {},
+     "default": "70",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "see_other_players": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    }
+   },
+   "requires": {
+    "game": {
+     "Refunct": "1.8.0"
+    },
+    "version": "0.6.8"
+   }
+  },
   "Rift of the Necrodancer": {
    "accessibility": {
     "default": "full",
@@ -6937,112 +7618,148 @@
    },
    "bans": {
     "AnomalyEnabled": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "AnomalyItemWeight": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "BasicResearchLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "max": "banned"
     },
     "BiotechEnabled": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "BonusResearchItems": {
+     "bottom": "banned",
      "min": "banned"
     },
     "ColonistItemCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "CraftLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "DeathLink": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     },
     "ExtraMonumentStatueCount": {
+     "bottom": "provisional",
      "min": "banned"
     },
     "HardToMakeItemWeight": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "HiTechResearchLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "max": "banned"
     },
     "IdeologyEnabled": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "IndustrialItemWeight": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "MedievalItemWeight": {
-     "middle": "banned"
+     "middle": "banned",
+     "min": "banned"
     },
     "MonumentOtherBuildingRequirementCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "middle": "provisional"
     },
     "MonumentStatueCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "middle": "provisional"
     },
     "MonumentWealthRequirement": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "middle": "provisional"
     },
     "MultiAnalyzerResearchLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "max": "banned"
     },
     "NeolithicItemWeight": {
-     "middle": "banned"
+     "middle": "banned",
+     "min": "banned"
     },
     "OdysseyEnabled": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "PercentFillerAsTraps": {
+     "bottom": "provisional",
      "min": "banned"
     },
     "PlayerNamesAsColonistItems": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "QuestLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "RaidLocationCount": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "RaidTrapCount": {
+     "bottom": "provisional",
      "min": "banned"
     },
     "ResearchBaseCost": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "ResearchCostIncreasePerTier": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "ResearchCostVariance": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "ResearchMaxPrerequisites": {
-     "max": "banned"
+     "max": "banned",
+     "min": "banned"
     },
     "ResearchScoutSecretTraps": {
-     "off": "banned"
+     "off": "banned",
+     "on": "provisional"
     },
     "ResearchScoutType": {
+     "fullitem_all": "banned",
      "summary_available": "banned"
     },
     "RoyaltyEnabled": {
+     "disabled": "banned",
      "enabled": "banned"
     },
     "SpacerItemWeight": {
-     "bottom": "banned"
+     "bottom": "banned",
+     "min": "banned"
     },
     "StartingResearchLevel": {
+     "crashlanded": "banned",
      "none": "banned"
     },
     "TradeLocationCount": {
-     "middle": "banned"
+     "middle": "banned",
+     "min": "banned"
     },
     "VictoryCondition": {
-     "any": "banned"
+     "any": "banned",
+     "monument": "banned"
     }
    },
    "options": {
@@ -7325,6 +8042,643 @@
     "version": "0.6.8"
    }
   },
+  "SMW: Spicy Mycena Waffles": {
+   "accessibility": {
+    "default": "full",
+    "kind": "choice",
+    "values": [
+     "full",
+     "minimal"
+    ]
+   },
+   "bans": {
+    "ability_shuffle": {
+     "list": "provisional"
+    },
+    "alternate_logic": {
+     "list": "provisional"
+    },
+    "block_checks": {
+     "list": "provisional"
+    },
+    "boss_shuffle": {
+     "simple": "banned"
+    },
+    "bowser_castle_doors": {
+     "fast": "banned"
+    },
+    "bowser_castle_rooms": {
+     "random_two_room": "banned"
+    },
+    "carryless_exits": {
+     "min": "banned"
+    },
+    "damage_link": {
+     "false": "banned"
+    },
+    "death_link": {
+     "false": "banned"
+    },
+    "decoupled_fast_swimming": {
+     "true": "banned"
+    },
+    "decoupled_wall_run_anywhere": {
+     "true": "banned"
+    },
+    "decoupled_yoshi_carry": {
+     "true": "banned"
+    },
+    "display_received_item_popups": {
+     "progression_minus_yoshi_eggs": "banned"
+    },
+    "dragon_coin_checks": {
+     "true": "banned"
+    },
+    "early_climb": {
+     "false": "banned"
+    },
+    "enemy_shuffle": {
+     "false": "banned"
+    },
+    "energy_link": {
+     "true": "banned"
+    },
+    "game_logic_difficulty": {
+     "medium": "banned"
+    },
+    "goal": {
+     "bowser": "banned"
+    },
+    "hidden_1up_checks": {
+     "true": "banned"
+    },
+    "inventory_yoshi_logic": {
+     "false": "banned"
+    },
+    "junk_fill_percentage": {
+     "min": "banned"
+    },
+    "level_effects": {
+     "min": "banned"
+    },
+    "level_shuffle": {
+     "true": "banned"
+    },
+    "luigi_physics": {
+     "false": "banned"
+    },
+    "map_teleport_shuffle": {
+     "off": "banned"
+    },
+    "map_transition_shuffle": {
+     "false": "banned"
+    },
+    "mario_palette": {
+     "mario": "banned"
+    },
+    "midway_point_checks": {
+     "false": "banned"
+    },
+    "moon_checks": {
+     "true": "banned"
+    },
+    "music_shuffle": {
+     "none": "banned"
+    },
+    "percentage_of_yoshi_eggs": {
+     "top": "banned"
+    },
+    "room_checks": {
+     "false": "banned"
+    },
+    "sfx_shuffle": {
+     "none": "banned"
+    },
+    "star_block_checks": {
+     "false": "banned"
+    },
+    "starting_location": {
+     "yoshis_island": "banned"
+    },
+    "swap_donut_gh_exits": {
+     "true": "banned"
+    },
+    "swap_exit_count": {
+     "min": "banned"
+    },
+    "trap_fill_percentage": {
+     "min": "provisional"
+    },
+    "trap_link": {
+     "false": "provisional"
+    },
+    "yoshi_egg_count": {
+     "bottom": "banned"
+    },
+    "yoshi_egg_placement": {
+     "list": "provisional"
+    }
+   },
+   "options": {
+    "ability_shuffle": {
+     "kind": "LIST"
+    },
+    "alternate_logic": {
+     "kind": "LIST"
+    },
+    "block_checks": {
+     "kind": "LIST"
+    },
+    "boss_shuffle": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "simple",
+      "full",
+      "singularity"
+     ]
+    },
+    "bowser_castle_doors": {
+     "default": "vanilla",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "fast",
+      "slow"
+     ]
+    },
+    "bowser_castle_rooms": {
+     "default": "random_two_room",
+     "kind": "choice",
+     "values": [
+      "vanilla",
+      "random_two_room",
+      "random_five_room",
+      "gauntlet",
+      "labyrinth"
+     ]
+    },
+    "bullet_time_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "carryless_exits": {
+     "aliases": {},
+     "default": "0",
+     "high": 18,
+     "kind": "range",
+     "low": 0
+    },
+    "damage_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "death_link_heart": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "decoupled_fast_swimming": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "decoupled_wall_run_anywhere": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "decoupled_yoshi_carry": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "display_received_item_popups": {
+     "default": "progression_minus_yoshi_eggs",
+     "kind": "choice",
+     "values": [
+      "none",
+      "all",
+      "progression",
+      "progression_minus_yoshi_eggs"
+     ]
+    },
+    "dragon_coin_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "early_climb": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "empty_item_box_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "enemy_shuffle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "energy_link": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "fishin_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "game_logic_difficulty": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "easy",
+      "medium",
+      "hard"
+     ]
+    },
+    "goal": {
+     "default": "bowser",
+     "kind": "choice",
+     "values": [
+      "bowser",
+      "yoshi_house"
+     ]
+    },
+    "hidden_1up_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "ice_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "inventory_yoshi_logic": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "invisibility_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "junk_fill_percentage": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "level_effects": {
+     "aliases": {},
+     "default": "0",
+     "high": 50,
+     "kind": "range",
+     "low": 0
+    },
+    "level_shuffle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "literature_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "luigi_physics": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "map_teleport_shuffle": {
+     "default": "off",
+     "kind": "choice",
+     "values": [
+      "off",
+      "on_only_stars",
+      "on_only_pipes",
+      "on_both_same_type",
+      "on_both_mix"
+     ]
+    },
+    "map_transition_shuffle": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "mario_palette": {
+     "default": "mario",
+     "kind": "choice",
+     "values": [
+      "mario",
+      "luigi",
+      "wario",
+      "waluigi",
+      "geno",
+      "princess",
+      "dark",
+      "sponge"
+     ]
+    },
+    "midway_point_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "moon_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "music_shuffle": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "consistent",
+      "full",
+      "singularity"
+     ]
+    },
+    "percentage_of_yoshi_eggs": {
+     "aliases": {},
+     "default": "85",
+     "high": 100,
+     "kind": "range",
+     "low": 1
+    },
+    "pixelate_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "reverse_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "room_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "screen_flip_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "sfx_shuffle": {
+     "default": "none",
+     "kind": "choice",
+     "values": [
+      "none",
+      "full",
+      "singularity"
+     ]
+    },
+    "spotlight_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "star_block_checks": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "starting_location": {
+     "default": "yoshis_island",
+     "kind": "choice",
+     "values": [
+      "yoshis_island",
+      "donut_plains",
+      "vanilla_dome",
+      "forest_of_illusion",
+      "special_zone"
+     ]
+    },
+    "sticky_floor_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "sticky_hands_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "stun_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "swap_donut_gh_exits": {
+     "default": "true",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "swap_exit_count": {
+     "aliases": {},
+     "default": "0",
+     "high": 22,
+     "kind": "range",
+     "low": 0
+    },
+    "thwimp_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "timer_trap_weight": {
+     "default": "medium",
+     "kind": "choice",
+     "values": [
+      "none",
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "trap_fill_percentage": {
+     "aliases": {},
+     "default": "0",
+     "high": 100,
+     "kind": "range",
+     "low": 0
+    },
+    "trap_link": {
+     "default": "false",
+     "kind": "choice",
+     "values": [
+      "false",
+      "true"
+     ]
+    },
+    "yoshi_egg_count": {
+     "aliases": {},
+     "default": "50",
+     "high": 255,
+     "kind": "range",
+     "low": 0
+    },
+    "yoshi_egg_placement": {
+     "kind": "LIST"
+    }
+   },
+   "requires": {
+    "game": {
+     "SMW: Spicy Mycena Waffles": "1.3.10"
+    },
+    "version": "0.6.8"
+   }
+  },
   "Sekiro: Shadows Die Twice": {
    "accessibility": {
     "default": "full",
@@ -7336,67 +8690,87 @@
    },
    "bans": {
     "additional_region_locks": {
+     "false": "banned",
      "true": "banned"
     },
     "balanced_endgame_boss_phases": {
+     "false": "banned",
      "true": "banned"
     },
     "carpsanity": {
+     "false": "banned",
      "true": "banned"
     },
     "death_link": {
-     "any_death": "banned"
+     "any_death": "banned",
+     "full_death": "banned"
     },
     "enemy_randomizer": {
+     "false": "banned",
      "true": "banned"
     },
     "excluded_location_behavior": {
+     "allow_useful": "banned",
      "forbid_useful": "banned"
     },
     "goal_option": {
-     "full_game": "banned"
+     "full_game": "banned",
+     "shura": "banned"
     },
     "missable_location_behavior": {
+     "allow_useful": "banned",
      "forbid_useful": "banned"
     },
     "quick_hirata": {
+     "early_global": "banned",
      "early_local": "banned"
     },
     "random_enemy_preset": {
      "dict": "provisional"
     },
     "randomize_bosses": {
+     "false": "banned",
      "true": "banned"
     },
     "randomize_headless": {
+     "false": "banned",
      "true": "banned"
     },
     "randomize_minibosses": {
+     "false": "banned",
      "true": "banned"
     },
     "randomize_regular_enemies": {
+     "false": "banned",
      "true": "banned"
     },
     "randomize_skills_and_prosthetics": {
+     "false": "banned",
      "true": "banned"
     },
     "remove_headless_slow_walk": {
+     "false": "banned",
      "true": "banned"
     },
     "replace_esoteric_texts_with_skills": {
+     "false": "banned",
      "true": "banned"
     },
     "scale_enemies": {
+     "false": "banned",
      "true": "banned"
     },
     "similar_boss_phases": {
+     "false": "banned",
      "true": "banned"
     },
     "simple_early_minibosses": {
+     "false": "banned",
      "true": "banned"
     },
     "very_early_hirata": {
-     "false": "banned"
+     "false": "banned",
+     "true": "banned"
     }
    },
    "options": {
@@ -7586,16 +8960,20 @@
    },
    "bans": {
     "DialogSpeed": {
+     "fast": "banned",
      "vanilla": "banned"
     },
     "ExpandedPool": {
+     "false": "banned",
      "true": "banned"
     },
     "StartingPosition": {
+     "dangerous": "banned",
      "very_dangerous": "banned"
     },
     "TriforceLocations": {
-     "anywhere": "banned"
+     "anywhere": "banned",
+     "dungeons": "banned"
     }
    },
    "options": {
@@ -7644,7 +9022,7 @@
    }
   }
  },
- "generated": "2026-11-07",
+ "generated": "2026-11-16",
  "ignored": [
   "accessibility",
   "exclude_locations",

@@ -16,6 +16,7 @@ from . import live
 from . import spoiler as spoiler_mod
 from .db import DB
 from .logic import Engine
+from .placements import match_spoiler
 from .regen import regenerate
 
 log = logging.getLogger("sdt")
@@ -82,9 +83,13 @@ class Room:
             t = time.perf_counter()
             mw = regenerate(self.cfg.data_dir, self.sp.seed)
             log.info("[%s] regenerated in %.1fs", self.cfg.slug, time.perf_counter() - t)
+            placed = match_spoiler(mw, self.sp)  # raises if the world or its logic differs from the run
+            if not placed.exact:
+                log.warning("[%s] regeneration filled %d locations differently (non-deterministic apworld); "
+                            "using the spoiler's placements, and its playthrough checks out",
+                            self.cfg.slug, placed.differing)
             sphere_of = {(loc, owner): i for i, sph in enumerate(self.sp.spheres) for loc, owner, _, _ in sph}
             self.engine = Engine(mw, sphere_of)
-            self._check_against_spoiler()
             pn = mw.player_name
             self.sphere_locs = defaultdict(list)  # slot -> [(sphere, Location)]
             by_key = {(l.name, pn[l.player]): l for ls in self.engine.real_locations.values() for l in ls}
@@ -102,18 +107,6 @@ class Room:
             self.phase = "error"
             self.error = f"{type(e).__name__}: {e}"
             log.error("[%s] load failed\n%s", self.cfg.slug, traceback.format_exc())
-
-    def _check_against_spoiler(self):
-        mw = self.engine.mw
-        mism = 0
-        for ls in self.engine.real_locations.values():
-            for l in ls:
-                exp = self.sp.placements.get((l.name, mw.player_name[l.player]))
-                if exp != (l.item.name, mw.player_name[l.item.player]):
-                    mism += 1
-        if mism:
-            raise RuntimeError(f"Regenerated world differs from the spoiler at {mism} locations - "
-                               f"check the Archipelago/apworld versions match the ones used to generate.")
 
     # ---------------------------------------------------------------- refresh
 

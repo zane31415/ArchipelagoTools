@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT))
 from sdt import live, spoiler as spoiler_mod  # noqa: E402
 from sdt.export import evaluate, export  # noqa: E402
 from sdt.logic import Engine  # noqa: E402
+from sdt.placements import SpoilerMismatch, match_spoiler  # noqa: E402
 from sdt.regen import regenerate  # noqa: E402
 
 
@@ -41,14 +42,18 @@ def main():
     sp = spoiler_mod.parse(next(data.glob("*_Spoiler.txt")))
     print(f"Regenerating AP {sp.version} seed {sp.seed} ({len(sp.players)} players)…")
     mw = regenerate(data, sp.seed)
+    try:
+        placed = match_spoiler(mw, sp)
+    except SpoilerMismatch as e:
+        sys.exit(f"Regenerated world doesn't match the spoiler: {e}")
+    if placed.exact:
+        print("Regeneration matches the spoiler.")
+    else:
+        print(f"Regeneration filled {placed.differing} locations differently from the spoiler (an apworld isn't "
+              f"deterministic), so the spoiler's placements were used instead ({placed.created} items created, "
+              f"{placed.unused} left over). The spoiler's playthrough is fully reachable under the rebuilt logic.")
     sphere_of = {(loc, owner): i for i, sph in enumerate(sp.spheres) for loc, owner, _, _ in sph}
     eng = Engine(mw, sphere_of)
-
-    mism = sum(1 for ls in eng.real_locations.values() for l in ls
-               if sp.placements.get((l.name, mw.player_name[l.player])) != (l.item.name, mw.player_name[l.item.player]))
-    if mism:
-        sys.exit(f"Regenerated world differs from the spoiler at {mism} locations; check AP/apworld versions.")
-    print("Regeneration matches the spoiler.")
 
     room = live.fetch(f"room_status/{args.room}")
     t = time.perf_counter()

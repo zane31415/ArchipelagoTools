@@ -47,7 +47,10 @@ README one folder up). Pass `--out` to write somewhere else. Then commit and pus
 adds `data/<slug>.json` and lists it in `data/rooms.json`, so older asyncs stay up. Exporting takes a few minutes (about 3 for the 12-player TestRun, ~450 KB of data).
 
 What the exporter checks before writing:
-- The rebuilt world must match the spoiler exactly, or it stops.
+- The rebuilt world must have the same locations as the spoiler, or it stops.
+- Item placements should match too. If they don't, it uses the spoiler's placements instead, and it
+  replays the spoiler's playthrough sphere by sphere to confirm the rebuilt logic agrees. If that fails,
+  it stops. See "Non-deterministic apworlds" below.
 - It compares the bundle with the real logic on every spoiler sphere plus the current live state, and prints any differences.
 
 **What's in the bundle:** location names, item names, and the logic requirements. There are **no item
@@ -118,12 +121,26 @@ public link. Keep the admin link to yourself.
 }
 ```
 
-On startup the tracker compares the rebuilt world with the spoiler, location by location. If anything
-differs (wrong apworld or AP version, missing yaml), the room shows an error instead of wrong data.
+On startup the tracker compares the rebuilt world with the spoiler, location by location. If the
+locations differ (wrong apworld or AP version, missing yaml), or the spoiler's playthrough doesn't
+check out under the rebuilt logic, the room shows an error instead of wrong data.
+
+### Non-deterministic apworlds
+
+Some apworlds fill differently every time for the same seed. That happens when they loop over Python
+sets of strings, whose order changes with each Python process. Week 2's Dicey Dungeons does this with
+its `character` option when a player picks more than one character. The generator's hash seed isn't
+recorded, so that run can't be reproduced, and every other world's placements drift with it.
+
+The logic doesn't depend on the fill, so the tracker keeps the rebuilt regions, locations and rules
+and takes every item's location from the spoiler (`sdt/placements.py`). The export prints "filled N
+locations differently … the spoiler's placements were used instead" when this happens. As a safety
+check, the spoiler's playthrough must be reachable in order, sphere by sphere.
 
 ## Layout
 
 - `sdt/regen.py`: rebuilds the multiworld in memory (`Generate` + `Main` with `--skip_output`)
+- `sdt/placements.py`: checks the rebuild against the spoiler, takes the spoiler's placements if the fill differs, and replays the playthrough
 - `sdt/spoiler.py`: parses the spoiler (players, placements, playthrough spheres)
 - `sdt/logic.py`: reachability, BK status, needs (single unlocks and a minimal set by greedy elimination), unlocks
 - `sdt/live.py`: archipelago.gg tracker API → Archipelago objects
